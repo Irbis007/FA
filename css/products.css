@@ -57,6 +57,12 @@
   padding-left: 24px;
   font-family: "Pobeda Bold", sans-serif;
   font-size: 36px;
+  transition: all .2s;
+}
+
+.products__tab .item__top .item__title:hover{
+  color: #ECC06A;
+  transition: all .2s;
 }
 
 .products__tab .item__top.active .item__title span {

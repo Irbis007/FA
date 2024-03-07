@@ -285,6 +285,7 @@ footer::after {
 }
 
 .header .logo {
+  width: 200px;
   flex-shrink: 0;
   overflow: hidden;
   position: absolute;
@@ -292,8 +293,11 @@ footer::after {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1000;
-  width: max-content;
   animation: logoAnim 1s 1s forwards;
+}
+
+.header .logo img{
+  width: 100%;
 }
 
 .header .logo .logo__wrapper {
@@ -346,12 +350,50 @@ footer::after {
     transform: translate(0);
     left: 0;
     top: 0;
+    width: 120px;
   }
   100%{
     position: relative;
     transform: translate(0);
     left: 0;
     top: 0;
+    width: 120px;
+  }
+}
+
+@media (max-width: 991px) {
+  @keyframes logoAnim {
+    90%{
+      transform: translate(0);
+      left: 0;
+      top: 0;
+      width: 72px;
+    }
+    100%{
+      position: relative;
+      transform: translate(0);
+      left: 0;
+      top: 0;
+      width: 72px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  @keyframes logoAnim {
+    90%{
+      transform: translate(0);
+      left: 0;
+      top: 0;
+      width: 54px;
+    }
+    100%{
+      position: relative;
+      transform: translate(0);
+      left: 0;
+      top: 0;
+      width: 54px;
+    }
   }
 }
 

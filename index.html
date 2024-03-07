@@ -29,11 +29,12 @@
           <button class="button button__tg">
             <span>Мой телеграм</span> <img src="./assets/icons/tg-icon.svg" alt="telegram icon" />
           </button>
+          <div class="header__lang">
+            <a href="#" class="lang">En</a>
+            <a href="#" class="lang active">Ru</a>
+          </div>
         </div>
-        <div class="header__lang">
-          <a href="#" class="lang">En</a>
-          <a href="#" class="lang active">Ru</a>
-        </div>
+      
       </div>
     </header>
     <div class="preloader"></div>
@@ -202,7 +203,7 @@
                       Предполагаю, что ты уже воспользовался возможностью ознакомиться с обучающим
                       <a href="#"
                         >видеороликом о Лукойле.
-                        <span><img src="./assets/icons/video-aside1.png" alt="" /></span
+                        <span><img src="./assets/icons/video-aside1.svg" alt="" /></span
                       ></a>
                     </p>
                     <br />
@@ -1138,6 +1139,7 @@
         loop: true,
         slidesPerView: 1,
         spaceBetween: 24,
+        autoHeight: true,
         breakpoints: {
           768: {
             slidesPerView: 3,
@@ -1145,6 +1147,7 @@
         },
         pagination: {
           el: ".swiper-pagination",
+          clickable: true,
         },
       });
 
@@ -1154,9 +1157,11 @@
           loop: true,
           slidesPerView: 1,
           spaceBetween: 24,
+          autoHeight: true,
 
           pagination: {
             el: ".swiper-pagination",
+            clickable: true,
           },
         });
       }
