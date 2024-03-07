@@ -1,0 +1,129 @@
+
+
+main .license{
+  padding-top: 88px;
+}
+
+.license::before{
+  content: '[Лицензии]';
+  top: 70px;
+}
+
+.license::after{
+  top: 50px;
+  left: 150px;
+}
+
+.license .license__title{
+  font-size: 72px;
+}
+
+.license .license__body{
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  max-width: 1270px;
+  margin: 0 auto;
+  margin-top: 46px;
+}
+
+.license__body .item {
+  position: relative;
+  padding: 36px;
+  border-radius: 9px;
+  background: linear-gradient(rgba(30, 30, 30, 1), rgba(35, 35, 35, 1), rgba(38, 38, 38, 1))
+      padding-box,
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 0, 0, 0)) border-box;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  transition: all .2s;
+  cursor: pointer;
+}
+
+.license__body .item.active{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  border: none;
+  background: rgb(21, 21, 21, .7);
+  z-index: 10000;
+}
+
+.license__body .item.active:hover{
+  border: none;
+  border-radius: 0;
+  background: rgb(21, 21, 21, .7);
+  box-shadow:none;
+}
+
+.license .license__body .item.active img{
+  display: flex;
+  margin: 0 auto;
+  height: 90vh;
+  width: auto;
+}
+
+@media (max-width: 767px) {
+  .license__body .item{
+    padding: 12px;
+  }
+  .license .license__body .item.active img{
+    width: 90vw;
+    height: auto;
+  }
+}
+
+.license__body .item.active:hover::after{
+  display: none;
+}
+
+.license__body .item:hover {
+  background: linear-gradient(rgba(30, 30, 30, 1), rgba(35, 35, 35, 1), rgba(38, 38, 38, 1))
+      padding-box,
+    linear-gradient(to bottom, rgba(236, 192, 106, 0.4), rgba(255, 0, 0, 0)) border-box;
+  box-shadow: inset 0 12px 14px rgba(236, 192, 106, 0.1);
+  transition: all .2s;
+}
+
+.license__body .item::after{
+  content: url('../assets/icons/search.svg');
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 72px;
+  height: 72px;
+  background-color: #fff;
+  filter: drop-shadow(0 23px 32px rgba(0, 0, 0, .25));
+
+  border-radius: 50%;
+
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .2s;
+}
+
+.license__body .item:hover::after{
+  opacity: 1;
+  transition: all .2s;
+}
+
+
+.license .license__body .item img{
+  border-radius: 12px;
+  width: 100%;
+}
+
+
+@media (max-width: 991px) {
+  .license .license__title{
+    font-size: 54px;
+    text-align: center;
+  }
+}

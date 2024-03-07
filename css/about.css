@@ -1,0 +1,113 @@
+.about {
+
+  color: #fff;
+}
+
+.about::before{
+  content: '[Обо мне]';
+}
+
+.about .container{
+  padding-top: 280px;
+  padding-bottom: 297px;
+  background: url('../assets/img/about.png');
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.about .about__body {
+  max-width: 810px;
+  margin-left: auto;
+}
+
+.about .about__title {
+  font-family: "Pobeda Bold", sans-serif;
+  font-size: 64px;
+  line-height: 120%;
+  letter-spacing: -0.04em;
+}
+
+.about .about__descr {
+  max-width: 683px;
+  margin-top: 52px;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 160%;
+}
+
+.about .about__cards {
+  display: flex;
+  gap: 24px;
+  margin-top: 52px;
+}
+
+.about .about__cards .item {
+  padding: 32px;
+  background: linear-gradient(to right, rgb(30, 30, 30), rgb(35, 35, 35), rgb(38, 38, 38))
+      padding-box,
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 0, 0, 0)) border-box;
+  border-radius: 12px;
+  border: 1px solid transparent;
+}
+
+.about .about__cards .item__descr{
+  margin-top: 24px;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 160%;
+}
+
+@media (max-width: 991px) {
+  .about .container{
+    padding-top: 132px;
+    padding-bottom: 110px;
+    background-position: calc(100% + 350px) -100px;
+  }
+  .about .about__body{
+    margin-left: 0;
+  }
+  .about .about__title {
+    font-size: 36px;
+  }
+  .about .about__descr{
+    font-size: 16px;
+    max-width: 466px;
+  }
+  .about .about__cards{
+    flex-direction: column;
+    max-width: 406px;
+  }
+  .about .about__cards .item{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    padding: 24px;
+  }
+  .about .about__cards .item__descr{
+    margin-top: 0;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .about .container{
+    padding-top: 381px;
+    background-position: 1px -30px;
+  }
+  .about .about__title{
+    text-align: center;
+    font-family: 27px;
+  }
+  .about .about__descr{
+    margin: 0 auto;
+    margin-top: 32px;
+    text-align: center;
+  }
+  .about .about__cards{
+    margin: 0 auto;
+    margin-top: 32px;
+  }
+}

@@ -1,0 +1,146 @@
+
+
+.footer{
+overflow: hidden;
+  position: relative;
+  padding: 141px 0 84px;
+}
+
+.footer__circle{
+  content: '';
+  position: absolute;
+  left: -436px;
+  bottom: -552px;
+  width: 1028px;
+  aspect-ratio: 1 / 1;
+  background-color: transparent;
+  border: 1px solid rgb(255, 255, 255, .2);
+  border-radius: 50%;
+}
+
+.footer .footer__partners{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer.footer::before{
+  top: 130px;
+  content: '[Партенры]';
+}
+
+footer.footer::after{
+  top: 80px;
+}
+
+.footer .footer__partners .partner:hover{
+  position: relative;
+}
+
+.footer .footer__partners .partner img.active{
+  position: absolute;
+  opacity: 0;
+  transition: all .2s;
+}
+
+.footer .footer__partners .partner img{
+  opacity: 1;
+  transition: all .2s;
+}
+
+
+.footer .footer__partners .partner:hover img.active{
+  opacity: 1;
+  transition: all .2s;
+}
+
+.footer .footer__partners .partner:hover img{
+  opacity: 0;
+  transition: all .2s;
+}
+
+.footer .footer__body{
+  padding-top: 207px;
+}
+
+
+@media (max-width: 1200px) {
+  .footer .footer__partners .partner__tinkoff img{
+    max-width: 280px;
+  }
+  .footer .footer__partners .partner__bks img{
+    max-width: 160px;
+  }
+}
+
+
+@media (max-width: 991px) {
+  .footer{
+    padding: 86px 0 24px;
+  }
+  footer.footer::before{
+    top: 70px;
+  }
+  
+  footer.footer::after{
+    top: 20px;
+  }
+  .footer__circle{
+    width: 538px;
+    left: -216px;
+    bottom: -353px;
+  }
+  .footer .footer__partners{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    row-gap: 30px;
+  }
+  .footer .footer__partners .partner__tinkoff img{
+    max-width: 340px;
+  }
+  .footer .footer__partners .partner__bks img{
+    max-width: 200px;
+  }
+  .footer .footer__partners .partner__tinkoff:nth-child(1){
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .footer .footer__partners .partner__bks:nth-child(2){
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .footer .footer__partners .partner__bks:nth-child(4){
+    margin-left: auto;
+  }
+  .footer .footer__body{
+    padding-top: 86px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .footer{
+    padding: 91px 0 12px;
+  }
+  footer.footer::before{
+    transform: translateX(-50%);
+    left: 50%;
+  }
+  
+  footer.footer::after{
+    transform: translateX(-50%);
+    left: 50%;
+  }
+  .footer__circle{
+    display: none;
+  }
+  .footer .footer__partners .partner__tinkoff img{
+    max-width: 152px;
+  }
+  .footer .footer__partners .partner__bks img{
+    max-width: 90px;
+  }
+  .footer .footer__body{
+    padding-top: 68px;
+  }
+}

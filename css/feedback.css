@@ -1,0 +1,153 @@
+.feedback {
+  padding-top: 200px;
+  padding-bottom: 170px;
+}
+
+.feedback::before{
+  content: '[Отзывы]';
+  top: 170px;
+}
+
+.feedback .container{
+  padding: 0;
+}
+
+.feedback .feedback__title {
+  font-size: 72px;
+}
+
+.feedback .swiper{
+  margin-top: 52px;
+  padding-bottom: 78px;
+}
+
+.feedback .swiper-pagination{
+  bottom: 0px;
+}
+.swiper-pagination-bullet-active{
+  background-color: #ECC06A;
+}
+
+.feedback .swiper-slide {
+  min-width: 541px;
+  width: calc(33% - 12px);
+  padding: 48px;
+  background: linear-gradient(rgba(30, 30, 30, 1), rgba(35, 35, 35, 1), rgba(38, 38, 38, 1))
+      padding-box,
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 0, 0, 0)) border-box;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  transition: all 0.2s;
+}
+
+.feedback .slide__top{
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.feedback .slide__top .top__title{
+  color: #fff;
+  font-family: 'Pobeda Bold', sans-serif;
+  font-size: 42px;
+  line-height: 120%;
+}
+
+.feedback .slide__top .top__subtitle{
+  color: #ECC06A;
+  font-family: "Helvetiva Neue", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: .25em;
+  text-transform: uppercase;
+}
+
+.feedback .slide__top .top__descr{
+  margin-top: 6px;
+  color: #fff;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 130%;
+  opacity: .5;
+}
+
+.feedback .slide__body{
+  margin-top: 24px;
+}
+
+.feedback .slide__body .body__descr{
+  color: #fff;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 160%;
+}
+
+.feedback .slide__body .body__prices{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 24px;
+}
+
+.feedback .slide__body .body__price .price__subtitle{
+  color: #fff;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 160%;
+  opacity: .5;
+}
+
+.feedback .slide__body .body__price .price__title{
+  color: #fff;
+  font-family: 'Pobeda Bold', sans-serif;
+  font-size: 36px;
+  line-height: 120%;
+}
+
+@media (max-width: 991px) {
+  .feedback {
+    padding: 86px 0;
+  }
+  .feedback::before{
+    top: 100px;
+  }
+  .feedback .container{
+    padding: 0 12px;
+  }
+  .feedback .feedback__title{
+    font-size: 54px;
+    text-align: center;
+  }
+  .feedback .swiper{
+    padding-bottom: 40px;
+  }
+  .feedback .slide__body .body__descr{
+    font-size: 16px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .feedback::before{
+    top: 60px;
+  }
+  .feedback .swiper-slide{
+    min-width: 100%;
+  }
+  .feedback .slide__top .top__title{
+    font-size: 32px;
+  }
+  .feedback .slide__top .top__subtitle{
+    font-size: 8px;
+  }
+  .feedback .slide__body .body__descr{
+    font-size: 14px;
+  }
+  .feedback .slide__body .body__prices{
+    flex-direction: column;
+  }
+}
