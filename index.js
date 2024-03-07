@@ -55,6 +55,7 @@ window.addEventListener("wheel", function (e) {
       Math.ceil(triggerBlock.scrollLeft) != 0
     ) {
       mainContainer.classList.add('unscroll')
+      console.log('unscroll')
       if (e.deltaY > 0) {
         scrollPosition += 40;
       } else {
