@@ -78,23 +78,33 @@ main .intro::before {
 }
 
 .intro__aside .item {
+  opacity: .4;
   transition: all 0.2s;
 }
 
 .intro__aside .item:hover {
-  background-color: #fff;
+  opacity: 1;
   cursor: pointer;
   transition: all 0.2s;
 }
 
 .intro__aside .item:nth-child(11) {
-  opacity: 0.5;
+  opacity: 0.3;
 }
 .intro__aside .item:nth-child(12) {
-  opacity: 0.4;
+  opacity: 0.2;
 }
 .intro__aside .item:nth-child(13) {
-  opacity: 0.2;
+  opacity: 0.1;
+}
+.intro__aside .item:nth-child(13):hover{
+  opacity: 0.7;
+}
+.intro__aside .item:nth-child(12):hover{
+  opacity: 0.8;
+}
+.intro__aside .item:nth-child(11):hover{
+  opacity: 0.9;
 }
 
 @media (max-width: 1380px) {
