@@ -44,9 +44,9 @@ window.addEventListener("wheel", function (e) {
       mainContainer.classList.add('unscroll')
       console.log('ubscroll')
       if (e.deltaY > 0) {
-        scrollPosition += 40;
+        scrollPosition += 60;
       } else {
-        scrollPosition -= 40;
+        scrollPosition -= 60;
       }
       triggerBlock.scrollLeft = scrollPosition;
     } else if (
@@ -57,9 +57,9 @@ window.addEventListener("wheel", function (e) {
       mainContainer.classList.add('unscroll')
       console.log('unscroll')
       if (e.deltaY > 0) {
-        scrollPosition += 40;
+        scrollPosition += 60;
       } else {
-        scrollPosition -= 40;
+        scrollPosition -= 60;
       }
       triggerBlock.scrollLeft = scrollPosition;
       console.log('ubscroll')
