@@ -285,6 +285,7 @@ footer::after {
 }
 
 .header .logo {
+  flex-shrink: 0;
   overflow: hidden;
   position: absolute;
   top: 400px;
