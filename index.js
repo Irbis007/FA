@@ -1,13 +1,11 @@
-window.addEventListener('load', function (e) {
-  const preloader = document.querySelector('.preloader');
-  preloader.style.animation = 'preloaderAnim 0.7s 1s forwards'
-  const body = document.querySelector('body')
+window.addEventListener("load", function (e) {
+  const preloader = document.querySelector(".preloader");
+  preloader.style.animation = "preloaderAnim 0.7s 1s forwards";
+  const body = document.querySelector("body");
   setInterval(() => {
-    body.style.overflow = 'auto'
-  }, 1700)
+    body.style.overflow = "auto";
+  }, 1700);
 });
-
-
 
 const faqs = document.querySelectorAll(".faq .faq__body .item");
 
@@ -35,14 +33,14 @@ window.addEventListener("wheel", function (e) {
   let scrollTop = triggerBlock.getBoundingClientRect().y;
 
   if (triggerBlock && this.window.innerWidth > 991) {
+
     if (
       this.window.innerHeight / 2 - triggerBlock.clientHeight / 2 >= scrollTop &&
       Math.ceil(triggerBlock.clientWidth / 10) !=
         Math.ceil((triggerBlock.scrollWidth - Math.ceil(triggerBlock.scrollLeft)) / 10) &&
-      e.deltaY > 0
+      e.deltaY > 0 && scrollTop 
     ) {
-      mainContainer.classList.add('unscroll')
-      console.log('ubscroll')
+      mainContainer.classList.add("unscroll");
       if (e.deltaY > 0) {
         scrollPosition += 60;
       } else {
@@ -54,18 +52,15 @@ window.addEventListener("wheel", function (e) {
       this.window.innerHeight / 2 - triggerBlock.clientHeight / 2 <= scrollTop &&
       Math.ceil(triggerBlock.scrollLeft) != 0
     ) {
-      mainContainer.classList.add('unscroll')
-      console.log('unscroll')
+      mainContainer.classList.add("unscroll");
       if (e.deltaY > 0) {
         scrollPosition += 60;
       } else {
         scrollPosition -= 60;
       }
       triggerBlock.scrollLeft = scrollPosition;
-      console.log('ubscroll')
     } else {
-      console.log('scroll')
-      mainContainer.classList.remove('unscroll')
+      mainContainer.classList.remove("unscroll");
     }
   }
 });
@@ -105,32 +100,24 @@ tabButton.forEach((item, i) => {
   });
 });
 
+const licenses = document.querySelectorAll(".license__body .item");
 
-const licenses = document.querySelectorAll('.license__body .item')
+licenses.forEach((item) => {
+  item.addEventListener("click", () => {
+    item.classList.add("active");
+    mainContainer.style.overflow = "hidden";
+  });
+});
 
-licenses.forEach(item => {
-  item.addEventListener('click', () =>{
-    item.classList.add('active')
-    mainContainer.style.overflow = 'hidden'
-  })
-})
-
-document.addEventListener('click', (e) =>{
-  if(
-    e.target.closest('.license') &&
-    e.target.tagName != 'IMG'
-  ) {
-    removeActive(licenses)
-    mainContainer.style.overflow = 'auto'
+document.addEventListener("click", (e) => {
+  if (e.target.closest(".license") && e.target.tagName != "IMG") {
+    removeActive(licenses);
+    mainContainer.style.overflow = "auto";
   }
-})
-
+});
 
 function removeActive(list) {
   list.forEach((item) => {
     item.classList.remove("active");
   });
 }
-
-
-
