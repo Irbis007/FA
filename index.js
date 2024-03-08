@@ -30,17 +30,16 @@ let triggerBlock = document.querySelector(".benefits__slider-target");
 
 
 let scrollPosition = 0;
-
+let scrollR = triggerBlock.scrollWidth
 window.addEventListener("wheel", function (e) {
   let scrollTop = triggerBlock.getBoundingClientRect().y;
 
   if (triggerBlock && window.innerWidth > 991) {
-
     if (
       window.innerHeight / 2 - triggerBlock.clientHeight / 2 >= scrollTop &&
-      Math.ceil(triggerBlock.clientWidth / 10) !=
-        Math.ceil((triggerBlock.scrollWidth - Math.ceil(triggerBlock.scrollLeft)) / 10) &&
+      !(triggerBlock.scrollWidth - triggerBlock.clientWidth -40  < triggerBlock.scrollLeft) &&
       e.deltaY > 0 && scrollTop > 0
+      
     ) {
       mainContainer.classList.add("unscroll");
       if (e.deltaY > 0) {
