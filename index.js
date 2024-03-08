@@ -58,9 +58,10 @@ window.addEventListener("wheel", function (e) {
       triggerBlock.scrollLeft = scrollPosition;
     } else if (triggerBlock.scrollWidth - triggerBlock.clientWidth - 40 < triggerBlock.scrollLeft && e.deltaY > 0) {
       mainContainer.classList.remove("unscroll");
-    }else if (triggerBlock.scrollWidth - triggerBlock.clientWidth + 40 > triggerBlock.scrollLeft && e.deltaY > 0) {
+    }else if (40 > triggerBlock.scrollLeft && e.deltaY < 0) {
       mainContainer.classList.remove("unscroll");
     }
+    console.log(triggerBlock.scrollWidth - triggerBlock.clientWidth + 40 , triggerBlock.scrollLeft)
   }
 });
 
