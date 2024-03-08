@@ -282,7 +282,8 @@ footer::after {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url("../assets/img/main_bg.jpg");
+  background: url("../assets/img/bg.svg");
+  background-color: #151515;
   z-index: 100;
 }
 
@@ -303,15 +304,16 @@ footer::after {
 }
 
 .header .logo {
-  width: 200px;
-  flex-shrink: 0;
-  overflow: hidden;
   position: absolute;
   top: 400px;
   left: 50%;
+  flex-shrink: 0;
+  width: 200px;
+
   transform: translate(-50%, -50%);
-  z-index: 1000;
   animation: logoAnim 1s 1s forwards;
+  overflow: hidden;
+  z-index: 1000000000;
 }
 
 .header .logo img{

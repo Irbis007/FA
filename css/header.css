@@ -1,12 +1,11 @@
 
 
 .header .container, .footer .footer__body{
-  position: relative;
   display: flex;
   align-items: center;
   gap: 54px;
   margin-top: 24px;
-  z-index: 10;
+
 }
 
 
@@ -40,7 +39,7 @@
 }
 
 .header .header__button .button__tg, .footer .footer__button .button__tg{
-
+  position: relative;
   width: 200px;
   height: 46px;
   background-color: #29B6F6;
@@ -56,6 +55,7 @@
   font-size: 22px;
   text-transform: uppercase;
   cursor: pointer;
+  z-index: 10;
 }
 
 .header .header__button .button__tg:hover, .footer .footer__button .button__tg:hover{
