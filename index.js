@@ -31,36 +31,39 @@ window.addEventListener("wheel", function (e) {
   let scrollTop = triggerBlock.getBoundingClientRect().y;
 
   if (triggerBlock && window.innerWidth > 991) {
-    if (
-      window.innerHeight / 2 - triggerBlock.clientHeight / 2 >= scrollTop &&
-      !(triggerBlock.scrollWidth - triggerBlock.clientWidth - 40 < triggerBlock.scrollLeft) &&
-      e.deltaY > 0 &&
-      scrollTop > 0
-    ) {
-      mainContainer.classList.add("unscroll");
-      if (e.deltaY > 0) {
-        scrollPosition += 60;
+    if(e.deltaY > 0){
+      if (
+        window.innerHeight / 2 - triggerBlock.clientHeight / 2 >= scrollTop &&
+        !(triggerBlock.scrollWidth - triggerBlock.clientWidth - 40 < triggerBlock.scrollLeft) &&
+        scrollTop > 0
+      ) {
+        mainContainer.classList.add("unscroll");
+        if (e.deltaY > 0) {
+          scrollPosition += 60;
+        } else {
+          scrollPosition -= 60;
+        }
+        triggerBlock.scrollLeft = scrollPosition;
       } else {
-        scrollPosition -= 60;
+        mainContainer.classList.remove("unscroll");
       }
-      triggerBlock.scrollLeft = scrollPosition;
-    } else if (
-      e.deltaY < 0 &&
-      window.innerHeight / 2 - triggerBlock.clientHeight / 2 <= scrollTop &&
-      Math.ceil(triggerBlock.scrollLeft) != 0
-    ) {
-      mainContainer.classList.add("unscroll");
-      if (e.deltaY > 0) {
-        scrollPosition += 60;
-      } else {
-        scrollPosition -= 60;
+    } else if(e.deltaY < 0){
+      if (
+        window.innerHeight / 2 - triggerBlock.clientHeight / 2 <= scrollTop &&
+        Math.ceil(triggerBlock.scrollLeft) != 0
+      ) {
+        mainContainer.classList.add("unscroll");
+        if (e.deltaY > 0) {
+          scrollPosition += 60;
+        } else {
+          scrollPosition -= 60;
+        }
+        triggerBlock.scrollLeft = scrollPosition;
+      } else{
+        mainContainer.classList.remove("unscroll");
       }
-      triggerBlock.scrollLeft = scrollPosition;
-    } else if (triggerBlock.scrollWidth - triggerBlock.clientWidth - 40 < triggerBlock.scrollLeft && e.deltaY > 0) {
-      mainContainer.classList.remove("unscroll");
-    }else if (40 > triggerBlock.scrollLeft && e.deltaY < 0) {
-      mainContainer.classList.remove("unscroll");
     }
+
     console.log(triggerBlock.scrollWidth - triggerBlock.clientWidth + 40 , triggerBlock.scrollLeft)
   }
 });
