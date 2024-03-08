@@ -1,10 +1,12 @@
 
 
 .header .container, .footer .footer__body{
+  position: relative;
   display: flex;
   align-items: center;
   gap: 54px;
   margin-top: 24px;
+  z-index: 10;
 }
 
 

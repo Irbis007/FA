@@ -25,10 +25,10 @@
   bottom: 0px;
   z-index: 1000;
 }
-.feedback .swiper-pagination-bullet.swiper-pagination-bullet-active{
+.feedback .swiper-pagination-bullet.swiper-pagination-bullet-active, .results .swiper-pagination-bullet.swiper-pagination-bullet-active{
   background-color: #ECC06A;
 }
-.feedback .swiper-pagination-bullet{
+.feedback .swiper-pagination-bullet, .results .swiper-pagination-bullet{
   background-color: rgba(255, 255, 255, .5);
   cursor: pointer;
 }

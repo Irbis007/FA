@@ -193,6 +193,20 @@ footer::after {
   transform: rotate(135deg);
 }
 
+.intro-graph{
+  position: absolute;
+  z-index: 1;
+}
+
+.intro-graph-2{
+  right: 0;
+  top: 81px;
+}
+
+.intro-graph-1{
+  top: 450px;
+  left: 12px;
+}
 @media (max-width: 1450px) {
   .deckor-2 {
     left: 400px;
@@ -232,6 +246,10 @@ footer::after {
   .deckor {
     border-width: 14.5px;
     filter: blur(66px);
+  }
+  .intro-graph-1{
+    top: 200px;
+    left: 12px;
   }
 }
 
