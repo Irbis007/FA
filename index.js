@@ -1,4 +1,4 @@
-import css from "./index.css";
+
 
 
 window.addEventListener("load", function (e) {

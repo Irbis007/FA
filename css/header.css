@@ -105,15 +105,8 @@
 
 
 @media (max-width: 991px) {
-  .header .logo{
-    /* width: 72px !important; */
-  }
   .header .container, .footer .footer__body{
     gap: 24px;
-  }
-  .header .logo .logo__wrapper, .footer .logo {
-    /* width: 72px;
-    height: 72px;  */
   }
   .header .logo .logo__wrapper img, .footer .logo  img{
     width: 100%;
@@ -158,6 +151,9 @@
   }
   .header .header__button .button__tg, .footer .footer__button .button__tg{
     width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 42px;
     height: 42px;
   }
