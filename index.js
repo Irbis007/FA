@@ -31,32 +31,28 @@ window.addEventListener("wheel", function (e) {
   let scrollTop = triggerBlock.getBoundingClientRect().y;
 
   if (triggerBlock && window.innerWidth > 991) {
-    if(e.deltaY > 0){
+    if (e.deltaY > 0) {
       if (
-        window.innerHeight / 2 - triggerBlock.clientHeight / 2 >= scrollTop &&
+        (window.innerHeight / 2 - triggerBlock.clientHeight / 2) + 20 >= scrollTop &&
         !(triggerBlock.scrollWidth - triggerBlock.clientWidth - 40 < triggerBlock.scrollLeft) &&
         scrollTop > 0
       ) {
         mainContainer.classList.add("unscroll");
-        if (e.deltaY > 0) {
-          scrollPosition += 60;
-        } else {
-          scrollPosition -= 60;
-        }
+        scrollPosition += 40;
         triggerBlock.scrollLeft = scrollPosition;
       } else {
         mainContainer.classList.remove("unscroll");
       }
-    } else if(e.deltaY < 0){
+    } else if (e.deltaY < 0) {
       if (
-        window.innerHeight / 2 - triggerBlock.clientHeight / 2 >= scrollTop &&
+        (window.innerHeight / 2 - triggerBlock.clientHeight / 2) -20 <= scrollTop &&
         scrollPosition >= 0
       ) {
         mainContainer.classList.add("unscroll");
 
-        scrollPosition -= 60;
+        scrollPosition -= 40;
         triggerBlock.scrollLeft = scrollPosition;
-      } else{
+      } else {
         mainContainer.classList.remove("unscroll");
       }
     }
