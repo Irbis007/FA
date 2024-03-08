@@ -28,20 +28,19 @@ faqs.forEach((item) => {
 let mainContainer = document.querySelector("body");
 let triggerBlock = document.querySelector(".benefits__slider-target");
 
-let isHorizontalScrolling = false;
 
 let scrollPosition = 0;
 
 window.addEventListener("wheel", function (e) {
   let scrollTop = triggerBlock.getBoundingClientRect().y;
 
-  if (triggerBlock && this.window.innerWidth > 991) {
+  if (triggerBlock && window.innerWidth > 991) {
 
     if (
-      this.window.innerHeight / 2 - triggerBlock.clientHeight / 2 >= scrollTop &&
+      window.innerHeight / 2 - triggerBlock.clientHeight / 2 >= scrollTop &&
       Math.ceil(triggerBlock.clientWidth / 10) !=
         Math.ceil((triggerBlock.scrollWidth - Math.ceil(triggerBlock.scrollLeft)) / 10) &&
-      e.deltaY > 0 && scrollTop 
+      e.deltaY > 0 && scrollTop > 0
     ) {
       mainContainer.classList.add("unscroll");
       if (e.deltaY > 0) {
@@ -52,7 +51,7 @@ window.addEventListener("wheel", function (e) {
       triggerBlock.scrollLeft = scrollPosition;
     } else if (
       e.deltaY < 0 &&
-      this.window.innerHeight / 2 - triggerBlock.clientHeight / 2 <= scrollTop &&
+      window.innerHeight / 2 - triggerBlock.clientHeight / 2 <= scrollTop &&
       Math.ceil(triggerBlock.scrollLeft) != 0
     ) {
       mainContainer.classList.add("unscroll");
