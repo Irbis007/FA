@@ -76,7 +76,7 @@ footer::after {
   );
   box-shadow: 0 12px 54px rgba(236, 192, 106, 0.35);
   filter: drop-shadow(0px 4px 0px #a5813a);
-
+  color: #151515;
   border: none;
   border-radius: 6px;
 
