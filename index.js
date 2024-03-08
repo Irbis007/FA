@@ -1,3 +1,6 @@
+import css from "./index.css";
+
+
 window.addEventListener("load", function (e) {
   const preloader = document.querySelector(".preloader");
   preloader.style.animation = "preloaderAnim 0.7s 1s forwards";
