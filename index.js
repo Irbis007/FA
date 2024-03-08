@@ -1,6 +1,3 @@
-
-
-
 window.addEventListener("load", function (e) {
   const preloader = document.querySelector(".preloader");
   preloader.style.animation = "preloaderAnim 0.7s 1s forwards";
@@ -28,18 +25,17 @@ faqs.forEach((item) => {
 let mainContainer = document.querySelector("body");
 let triggerBlock = document.querySelector(".benefits__slider-target");
 
-
 let scrollPosition = 0;
-let scrollR = triggerBlock.scrollWidth
+let scrollR = triggerBlock.scrollWidth;
 window.addEventListener("wheel", function (e) {
   let scrollTop = triggerBlock.getBoundingClientRect().y;
 
   if (triggerBlock && window.innerWidth > 991) {
     if (
       window.innerHeight / 2 - triggerBlock.clientHeight / 2 >= scrollTop &&
-      !(triggerBlock.scrollWidth - triggerBlock.clientWidth -40  < triggerBlock.scrollLeft) &&
-      e.deltaY > 0 && scrollTop > 0
-      
+      !(triggerBlock.scrollWidth - triggerBlock.clientWidth - 40 < triggerBlock.scrollLeft) &&
+      e.deltaY > 0 &&
+      scrollTop > 0
     ) {
       mainContainer.classList.add("unscroll");
       if (e.deltaY > 0) {
@@ -60,7 +56,9 @@ window.addEventListener("wheel", function (e) {
         scrollPosition -= 60;
       }
       triggerBlock.scrollLeft = scrollPosition;
-    } else {
+    } else if (triggerBlock.scrollWidth - triggerBlock.clientWidth - 40 < triggerBlock.scrollLeft && e.deltaY > 0) {
+      mainContainer.classList.remove("unscroll");
+    }else if (triggerBlock.scrollWidth - triggerBlock.clientWidth + 40 > triggerBlock.scrollLeft && e.deltaY > 0) {
       mainContainer.classList.remove("unscroll");
     }
   }
