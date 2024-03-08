@@ -49,22 +49,17 @@ window.addEventListener("wheel", function (e) {
       }
     } else if(e.deltaY < 0){
       if (
-        window.innerHeight / 2 - triggerBlock.clientHeight / 2 <= scrollTop &&
-        Math.ceil(triggerBlock.scrollLeft) != 0
+        window.innerHeight / 2 - triggerBlock.clientHeight / 2 >= scrollTop &&
+        scrollPosition >= 0
       ) {
         mainContainer.classList.add("unscroll");
-        if (e.deltaY > 0) {
-          scrollPosition += 60;
-        } else {
-          scrollPosition -= 60;
-        }
+
+        scrollPosition -= 60;
         triggerBlock.scrollLeft = scrollPosition;
       } else{
         mainContainer.classList.remove("unscroll");
       }
     }
-
-    console.log(triggerBlock.scrollWidth - triggerBlock.clientWidth + 40 , triggerBlock.scrollLeft)
   }
 });
 
