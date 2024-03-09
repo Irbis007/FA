@@ -1,11 +1,11 @@
-window.addEventListener("load", function (e) {
-  const preloader = document.querySelector(".preloader");
-  preloader.style.animation = "preloaderAnim 0.7s 1s forwards";
-  const body = document.querySelector("body");
-  setInterval(() => {
-    body.style.overflow = "auto";
-  }, 1700);
-});
+// window.addEventListener("load", function (e) {
+//   const preloader = document.querySelector(".preloader");
+//   preloader.style.animation = "preloaderAnim 0.7s 1s forwards";
+//   const body = document.querySelector("body");
+//   setInterval(() => {
+//     body.style.overflow = "auto";
+//   }, 1700);
+// });
 
 const faqs = document.querySelectorAll(".faq .faq__body .item");
 
