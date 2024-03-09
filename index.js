@@ -1,7 +1,5 @@
 
 
-import './index.css'
-
 const faqs = document.querySelectorAll(".faq .faq__body .item");
 
 faqs.forEach((item) => {
@@ -108,3 +106,20 @@ function removeActive(list) {
     item.classList.remove("active");
   });
 }
+
+
+const animation = lottie.loadAnimation({
+  container: document.getElementById('lottie-animation'), // контейнер для анимации
+  renderer: 'svg', // тип рендерера (может быть 'svg', 'canvas' или 'html')
+  loop: true, // зацикливание анимации
+  autoplay: true, // автоматический запуск анимации
+  path: './main.json' // путь к вашему JSON-файлу с анимацией
+});
+
+const animation2 = lottie.loadAnimation({
+  container: document.getElementById('lottie-animation2'), // контейнер для анимации
+  renderer: 'svg', // тип рендерера (может быть 'svg', 'canvas' или 'html')
+  loop: true, // зацикливание анимации
+  autoplay: true, // автоматический запуск анимации
+  path: './main.json' // путь к вашему JSON-файлу с анимацией
+});
