@@ -39,7 +39,7 @@ main .intro::before {
   }
 }
 
-.intro .intro__title div {
+.intro .intro__title span {
   margin-left: 460px;
 }
 
