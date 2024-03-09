@@ -1,11 +1,4 @@
-// window.addEventListener("load", function (e) {
-//   const preloader = document.querySelector(".preloader");
-//   preloader.style.animation = "preloaderAnim 0.7s 1s forwards";
-//   const body = document.querySelector("body");
-//   setInterval(() => {
-//     body.style.overflow = "auto";
-//   }, 1700);
-// });
+
 
 const faqs = document.querySelectorAll(".faq .faq__body .item");
 
@@ -62,11 +55,9 @@ window.addEventListener("wheel", function (e) {
 // VIDEO SECTION
 
 const videoSectionAside = document.querySelector(".video__prices");
-const videoSectionAsideData = [];
+const videoSectionAsideData = [15100, 15110, 15120, 1530, 15140];
 
-for (let i = 0; i < 30; i++) {
-  videoSectionAsideData.push(15100 + i * 10);
-}
+
 
 for (let i = 0; i <= videoSectionAsideData.length - 1; i++) {
   if (i === 6) {
