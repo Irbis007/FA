@@ -1,5 +1,7 @@
 
 
+import './index.css'
+
 const faqs = document.querySelectorAll(".faq .faq__body .item");
 
 faqs.forEach((item) => {
