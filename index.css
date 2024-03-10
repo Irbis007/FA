@@ -1,24 +1,37 @@
-/* @import url("./css/reboot.css"); */
+/* @import url("./css/reboot.css");
 @import url("./assets/font/stylesheet.css");
 @import url("./assets/font/pobeda/pobeda_bold.css");
-/* @import url("./css/some-styles.css"); */
-/* @import url("./css/header.css"); */
-/* @import url("./css/intro.css"); */
-/* @import url("./css/about.css"); */
-/* @import url("./css/video.css"); */
-/* @import url("./css/products.css"); */
-/* @import url("./css/license.css"); */
-/* @import url("./css/benefits.css"); */
-/* @import url("./css/results.css"); */
-/* @import url("./css/feedback.css"); */
-/* @import url("./css/teaching.css"); */
-/* @import url("./css/faq.css"); */
-/* @import url("./css/footer.css"); */
+@import url("./css/some-styles.css");
+@import url("./css/header.css");
+@import url("./css/intro.css");
+@import url("./css/about.css");
+@import url("./css/video.css");
+@import url("./css/products.css");
+@import url("./css/license.css");
+@import url("./css/benefits.css");
+@import url("./css/results.css");
+@import url("./css/feedback.css");
+@import url("./css/teaching.css");
+@import url("./css/faq.css");
+@import url("./css/footer.css");
 
-/* body {
-  background: url("./assets/img/bg.svg");
+body {
   background-repeat: repeat;
   background-color: #151515;
+} */
+
+body > .bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* body > .bg img{
+
 } */
 
 
