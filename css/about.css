@@ -10,10 +10,6 @@
 .about .container{
   padding-top: 280px;
   padding-bottom: 297px;
-  background: url('../assets/img/about.png');
-  background-position: left center;
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .about .about__body {
@@ -64,7 +60,6 @@
   .about .container{
     padding-top: 132px;
     padding-bottom: 110px;
-    background-position: calc(100% + 350px) -100px;
   }
   .about .about__body{
     margin-left: 0;
@@ -95,7 +90,6 @@
 @media (max-width: 767px) {
   .about .container{
     padding-top: 381px;
-    background-position: 1px -30px;
   }
   .about .about__title{
     text-align: center;
