@@ -1,6 +1,10 @@
 .products::before{
-  top: 55px;
+  top: -37px;
   content: '[Продукты]';
+}
+
+.products::after{
+  top: -116px;
 }
 
 .products__tab {
@@ -123,10 +127,19 @@
   transition: all .5s;
 }
 
+.products__tab .list .item .item__body.scroll-item{
+  opacity: 0;
+}
+
+.products__tab .list .item .item__body.active.scroll-item.animation-class{
+  opacity: 1;
+}
+
 .products__tab .list .item__body.active {
   opacity: 1;
   transition: all .5s;
 }
+
 
 .products__tab .item__body-title {
   font-family: "Pobeda Bold", sans-serif;
@@ -199,6 +212,8 @@
   }
 }
 
+
+
 @media (max-width: 1350px) {
   .products__tab .list .item .item__body {
     left: calc(100% + 20px);
@@ -249,6 +264,12 @@
 
 
 @media (max-width: 1150px) {
+  .products::before{
+    top: 146px;
+  }
+  .products::after{
+    top: 129px;
+  }
   .products .container{
     padding-top: 330px;
   }

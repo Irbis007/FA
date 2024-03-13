@@ -126,7 +126,7 @@ main .intro::before {
 
 @media (max-width: 1366px) {
   .intro .intro__title span{
-    margin-left: 40%;
+    margin-left: 42%;
   }
   .intro .intro__content{
     margin-top: -110px;
@@ -140,7 +140,11 @@ main .intro::before {
   .intro {
     margin-top: 50px;
   }
+  .intro .container{
+    padding-left: 32px;
+  }
   .intro__aside {
+    left: 32px;
     gap: 10px;
     width: 48px;
     padding: 18px 0;
@@ -150,7 +154,7 @@ main .intro::before {
     height: 18px;
   }
   .intro .intro__title {
-    padding-left: 60px;
+    padding-left: 68px;
     font-size: 114px;
   }
   .intro .intro__title div {
@@ -177,7 +181,7 @@ main .intro::before {
     font-size: 60px;
     text-align: center;
   }
-  .intro .intro__title div {
+  .intro .intro__title span {
     margin-left: 0px;
   }
   .intro .intro__content {

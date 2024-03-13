@@ -126,11 +126,11 @@ footer::after {
 }
 
 .deckor-2 {
-  width: 647px;
   left: 856px;
   top: -9px;
   animation: deckor2Anim 0.8s 0.4s;
   z-index: 1000;
+  transform: rotate(45);
 }
 
 .deckor-3 {

@@ -1,3 +1,13 @@
+
+main .teaching::before{
+  content: '[обучение]';
+  top: -48px;
+}
+
+main .teaching::after{
+  top: -111px;
+}
+
 .teaching {
   color: #fff;
 }
@@ -110,7 +120,22 @@
   }
 }
 
+@media (max-width: 991px) {
+  main .teaching::after{
+    top: -90px;
+  }
+}
+
 @media (max-width: 767px) {
+  .teaching{
+    margin-top: 60px;
+  }
+  main .teaching::after{
+    top: -70px;
+  }
+  main .teaching::before{
+    top: -40px;
+  }
   .teaching .item__bg {
     width: 100%;
     right: unset;

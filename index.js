@@ -90,7 +90,6 @@ const scrollAnimation = () => {
     if (window.innerHeight / 1.4 >=  el.getBoundingClientRect().y) {
       el.classList.add("animation-class");
     }
-    console.log(el.getBoundingClientRect().y + window.innerHeight, windowCenter)
   });
 };
 
