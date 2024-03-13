@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="bg">
-      <img loading="lazy" src="./assets/img/bg.svg" alt="bg">
+      <img loading="lazy" src="./assets/img/bg.svg" alt="bg" />
     </div>
     <script src="./js/preloader.js"></script>
     <header class="header">
@@ -44,7 +44,7 @@
       </div>
     </header>
     <div class="preloader">
-      <img loading="lazy" src="./assets/img/bg.svg" alt="">
+      <img loading="lazy" src="./assets/img/bg.svg" alt="" />
     </div>
     <main class="main">
       <section class="intro">
@@ -116,15 +116,15 @@
 
         <div class="container">
           <div class="about__img">
-            <img loading="lazy" src="./assets/img/about.png" alt="">
+            <img loading="lazy" src="./assets/img/about.png" alt="" />
           </div>
           <div class="about__body">
-            <h2 class="about__title title">
+            <h2 class="about__title title scroll-item">
               Моё имя — <span class="title__yellow">Александр Фролов</span>, <br />
               и я профессионально занимаюсь<br />
               трейдингом и инвестициями более 5 лет.
             </h2>
-            <div class="about__descr">
+            <div class="about__descr scroll-item">
               <p>
                 Мой подход к обучению основан на практике и персонализирован под каждого ученика. Я
                 не только делюсь теоретическими знаниями, но и помогаю применить их на практике,
@@ -136,7 +136,7 @@
                 практические навыки, необходимые для успешной торговли
               </p>
             </div>
-            <ul class="about__cards list">
+            <ul class="about__cards list scroll-item">
               <li class="item">
                 <div class="item__img">
                   <img src="./assets/icons/check.svg" alt="check" />
@@ -161,37 +161,55 @@
       </section>
       <section class="video">
         <div class="container">
-          <h2 class="video__title title">
+          <h2 class="video__title title scroll-item">
             Просмотрите видеоролик, в котором
             <span class="title__yellow">я анализирую ценную бумагу Лукойл</span> и демонстрирую
             применение различных технических инструментов для успешной торговли:
           </h2>
           <div class="button__aside">
             <ul class="list">
-              <li class="item item-1">
+              <li class="item item-1 active scroll-item">
                 <img src="./assets/icons/video-aside1.svg" alt="aside-img" />
               </li>
-              <li class="item item-2">
+              <li class="item item-2 scroll-item">
                 <img src="./assets/icons/video-aside2.svg" alt="aside-img" />
               </li>
-              <li class="item item-3">
+              <li class="item item-3 scroll-item">
                 <img src="./assets/icons/video-aside3.svg" alt="aside-img" />
               </li>
-              <li class="item item-4">
+              <li class="item item-4 scroll-item">
                 <img src="./assets/icons/video-aside4.svg" alt="aside-img" />
               </li>
             </ul>
           </div>
           <div class="video__body">
-            <div class="video__wrapper">
+            <div class="video__wrapper scroll-item">
               <div class="video__gradient"></div>
               <img loading="lazy" src="./assets/img/video.svg" alt="video" />
             </div>
-            <button class="button__yellow video__button">Смотреть больше</button>
+            <button class="button__yellow video__button scroll-item">Смотреть больше</button>
           </div>
         </div>
         <div class="video__price-wrapper">
-          <div class="video__prices"></div>
+          <div class="video__prices">
+            <div class="aside__price">15460.00</div>
+            <div class="aside__price">15450.00</div>
+            <div class="aside__price">15440.00</div>
+            <div class="aside__price">15430.00</div>
+            <div class="aside__price">15420.00</div>
+            <div class="aside__price">15410.00</div>
+            <div class="aside__price active">15400.00</div>
+            <div class="aside__price">15390.00</div>
+            <div class="aside__price">15380.00</div>
+            <div class="aside__price">15370.00</div>
+            <div class="aside__price">15360.00</div>
+            <div class="aside__price">15350.00</div>
+            <div class="aside__price">15340.00</div>
+            <div class="aside__price">15330.00</div>
+            <div class="aside__price">15320.00</div>
+            <div class="aside__price">15310.00</div>
+          </div>
+          <div class="video__price-gradient"></div>
         </div>
       </section>
       <section class="products">
@@ -201,17 +219,26 @@
           <div class="products__tab">
             <ul class="list">
               <li class="item active">
-                <div class="item__top active">
+                <div class="item__top active scroll-item">
                   <div class="item__icon">
                     <img src="./assets/icons/products-teaching.svg" alt="teaching" />
                   </div>
                   <h3 class="item__title">
-                    <span>Обучение </span><br class="tab__br" />
-                    <span>техническому и</span><br class="tab__br" />
-                    <span>волновому анализу</span>
+                    <span class="title__wrapper">
+                      <span class="title__anim"></span>
+                      <span>Обучение</span>
+                    </span>
+                    <span class="title__wrapper">
+                      <span class="title__anim"></span>
+                      <span>техническому</span>
+                    </span>
+                    <span class="title__wrapper">
+                      <span class="title__anim"></span>
+                      <span>волновому анализу</span>
+                    </span>
                   </h3>
                 </div>
-                <div class="item__body active">
+                <div class="item__body active scroll-item">
                   <h3 class="item__body-title">Обучение техническому и волновому анализу</h3>
                   <div class="item__body-descr">
                     <p>
@@ -231,17 +258,26 @@
                 </div>
               </li>
               <li class="item">
-                <div class="item__top">
+                <div class="item__top scroll-item">
                   <div class="item__icon">
                     <img src="./assets/icons/products-comunity.svg" alt="comunity" />
                   </div>
-                  <h3 class="item__title">
-                    <span>Закрытое</span>
-                    <span>сообщество</span> <br class="tab__br" />
-                    <span>FA INVESTMENT</span>
-                  </h3>
+                  <div class="item__title">
+                    <span class="title__wrapper">
+                      <span class="title__anim"></span>
+                      <span>Закрытое</span>
+                    </span>
+                    <span class="title__wrapper">
+                      <span class="title__anim"></span>
+                      <span>сообщество</span>
+                    </span>
+                    <span class="title__wrapper">
+                      <span class="title__anim"></span>
+                      <span>FA INVESTMENT</span>
+                    </span>
+                  </div>
                 </div>
-                <div class="item__body">
+                <div class="item__body scroll-item">
                   <h3 class="item__body-title">Закрытое сообщество FA INVESTMENT</h3>
                   <div class="item__body-descr">
                     <p>
@@ -259,17 +295,26 @@
                 </div>
               </li>
               <li class="item">
-                <div class="item__top">
+                <div class="item__top scroll-item">
                   <div class="item__icon">
                     <img src="./assets/icons/products-indicate.svg" alt="indicate" />
                   </div>
                   <h3 class="item__title">
-                    <span> Технический </span>
-                    <span>индикатор</span> <br class="tab__br" />
-                    <span>FA INVESTMENT</span>
+                    <span class="title__wrapper">
+                      <span class="title__anim"></span>
+                      <span>Технический</span>
+                    </span>
+                    <span class="title__wrapper">
+                      <span class="title__anim"></span>
+                      <span>индикатор</span>
+                    </span>
+                    <span class="title__wrapper">
+                      <span class="title__anim"></span>
+                      <span>FA INVESTMENT</span>
+                    </span>
                   </h3>
                 </div>
-                <div class="item__body">
+                <div class="item__body scroll-item">
                   <div class="item__body-title">Технический индикатор FA INVESTMENT</div>
                   <div class="item__body-descr">
                     <p>
@@ -294,12 +339,12 @@
       </section>
       <section class="license">
         <div class="container">
-          <h2 class="license__title title">Подтвержденная Экспертиза</h2>
+          <h2 class="license__title title scroll-item">Подтвержденная Экспертиза</h2>
           <ul class="license__body list">
-            <li class="item">
+            <li class="item scroll-item">
               <img loading="lazy" src="./assets/img/lisence-1.svg" alt="license" />
             </li>
-            <li class="item">
+            <li class="item scroll-item">
               <img loading="lazy" src="./assets/img/lisence-1.svg" alt="license" />
             </li>
           </ul>
@@ -307,7 +352,7 @@
       </section>
       <section class="benefits">
         <div class="container">
-          <h2 class="benefits__title title">
+          <h2 class="benefits__title title scroll-item">
             <span class="benefits__title-small">Максимизируйте</span>
             <span class="benefits__title-yellow">ваш</span>
             <span class="benefits__title-normal">потенциал</span>
@@ -315,12 +360,12 @@
           <div class="benefits__button-wrapper">
             <button class="benefits__button button__yellow">Узнать больше</button>
           </div>
-          <div class="benefits__slider">
+          <div class="benefits__slider scroll-item">
             <div class="benefits__slider-target">
               <div class="benefits__slider-wrapper">
                 <div class="benefits__slider-slide">
                   <div class="benefits__slide-img__dec">
-                    <img src="./assets/icons/graph.svg" alt="">
+                    <img src="./assets/icons/graph.svg" alt="" />
                   </div>
                   <div class="slide__img">
                     <img src="./assets/icons/benefit-skill.svg" alt="skill" />
@@ -335,7 +380,7 @@
                 </div>
                 <div class="benefits__slider-slide">
                   <div class="benefits__slide-img__dec">
-                    <img src="./assets/icons/graph.svg" alt="">
+                    <img src="./assets/icons/graph.svg" alt="" />
                   </div>
                   <div class="slide__img">
                     <img src="./assets/icons/benefit-manual.svg" alt="manual" />
@@ -350,7 +395,7 @@
                 </div>
                 <div class="benefits__slider-slide">
                   <div class="benefits__slide-img__dec">
-                    <img src="./assets/icons/graph.svg" alt="">
+                    <img src="./assets/icons/graph.svg" alt="" />
                   </div>
                   <div class="slide__img">
                     <img src="./assets/icons/benefit-approach.svg" alt="approach" />
@@ -365,7 +410,7 @@
                 </div>
                 <div class="benefits__slider-slide">
                   <div class="benefits__slide-img__dec">
-                    <img  src="./assets/icons/graph.svg" alt="">
+                    <img src="./assets/icons/graph.svg" alt="" />
                   </div>
                   <div class="slide__img">
                     <img src="./assets/icons/benefit-feedback.svg" alt="feedback" />
@@ -384,18 +429,19 @@
           <div></div>
         </div>
       </section>
-      <section class="results">
+      <section class="results ">
         <div class="deckor deckor-8 deckor-yellow"></div>
         <div class="deckor deckor-9 deckor-yellow"></div>
         <div class="container">
           <div class="swiper-2">
             <!-- Additional required wrapper -->
-            <div class="swiper-wrapper grid">
+            <div class="swiper-wrapper grid scroll-item">
               <!-- Slides -->
               <div class="swiper-slide col col-1">
                 <div class="grid__item">
                   <div class="item__button-wrapper">
                     <a href="#" class="item__button">
+                      <span>Подробнее в телеграм</span>
                       <img loading="lazy" src="./assets/icons/tg-icon.svg" alt="telegram" />
                     </a>
                   </div>
@@ -411,6 +457,7 @@
                 <div class="grid__item">
                   <div class="item__button-wrapper">
                     <a href="#" class="item__button">
+                      <span>Подробнее в телеграм</span>
                       <img loading="lazy" src="./assets/icons/tg-icon.svg" alt="telegram" />
                     </a>
                   </div>
@@ -436,6 +483,7 @@
                 <div class="grid__item">
                   <div class="item__button-wrapper">
                     <a href="#" class="item__button">
+                      <span>Подробнее в телеграм</span>
                       <img loading="lazy" src="./assets/icons/tg-icon.svg" alt="telegram" />
                     </a>
                   </div>
@@ -453,6 +501,7 @@
                 <div class="grid__item">
                   <div class="item__button-wrapper">
                     <a href="#" class="item__button">
+                      <span>Подробнее в телеграм</span>
                       <img loading="lazy" src="./assets/icons/tg-icon.svg" alt="telegram" />
                     </a>
                   </div>
@@ -468,6 +517,7 @@
                 <div class="grid__item">
                   <div class="item__button-wrapper">
                     <a href="#" class="item__button">
+                      <span>Подробнее в телеграм</span>
                       <img loading="lazy" src="./assets/icons/tg-icon.svg" alt="telegram" />
                     </a>
                   </div>
@@ -481,6 +531,7 @@
                 <div class="grid__item">
                   <div class="item__button-wrapper">
                     <a href="#" class="item__button">
+                      <span>Подробнее в телеграм</span>
                       <img loading="lazy" src="./assets/icons/tg-icon.svg" alt="telegram" />
                     </a>
                   </div>
@@ -500,6 +551,7 @@
                 <div class="grid__item">
                   <div class="item__button-wrapper">
                     <a href="#" class="item__button">
+                      <span>Подробнее в телеграм</span>
                       <img src="./assets/icons/tg-icon.svg" alt="telegram" />
                     </a>
                   </div>
@@ -529,10 +581,10 @@
       <section class="feedback">
         <div class="deckor deckor-10 deckor-yellow"></div>
         <div class="container">
-          <h2 class="title feedback__title">десятки успешных учеников:</h2>
+          <h2 class="title feedback__title scroll-item">десятки успешных учеников:</h2>
           <div class="swiper">
             <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper scroll-item">
               <!-- Slides -->
               <div class="swiper-slide">
                 <div class="slide__top">
@@ -804,7 +856,8 @@
       <section class="teaching">
         <div class="container">
           <ul class="list">
-            <li class="item">
+            <li class="item scroll-item">
+              <div class="card-anim"></div>
               <div class="item__bg">
                 <div id="lottie-animation"></div>
                 <div class="item__gradient"></div>
@@ -819,7 +872,8 @@
                 <button class="item__button button__yellow">Записаться на обучение</button>
               </div>
             </li>
-            <li class="item">
+            <li class="item scroll-item">
+              <div class="card-anim"></div>
               <div class="item__bg">
                 <div id="lottie-animation2"></div>
                 <div class="item__gradient"></div>
@@ -840,15 +894,15 @@
       <section class="faq">
         <div class="container">
           <div class="faq-circle__shadow"></div>
-          <h2 class="faq__title title">
-            <span class="faq__title-small">
+          <h2 class="faq__title title scroll-item">
+            <span class="faq__title-small ">
               <span>Часто</span>
               <span class="yellow__span">задаваемые</span>
             </span>
 
             <span class="faq__title-big"> вопросы<span class="yellow__span">?</span> </span>
           </h2>
-          <div class="faq__body">
+          <div class="faq__body scroll-item">
             <ul class="list">
               <li class="item">
                 <div class="faq__item-top">
@@ -1087,6 +1141,9 @@
       </section>
     </main>
     <footer class="footer">
+      <div class="footer__graph">
+        <img src="./assets/icons/footer-graph.svg" alt="footer__graph" />
+      </div>
       <div class="footer__circle"></div>
       <div class="container">
         <div class="footer__partners">
@@ -1133,9 +1190,10 @@
     </footer>
 
     <script async src="./index.js"></script>
-    <script async type="module"  src="./js/script.js"></script>
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.3/lottie.min.js"></script>
+    <script async type="module" src="./js/script.js"></script>
+    <script
+      async
+      src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.3/lottie.min.js"
+    ></script>
   </body>
 </html>
-
-

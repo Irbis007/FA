@@ -23,6 +23,10 @@
 .teaching .item__bg {
   position: absolute;
   z-index: 1;
+  inset: 2px;
+  border-radius: inherit;
+  overflow: hidden;
+
 }
 
 .teaching .item__bg .item__gradient {

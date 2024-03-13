@@ -1,10 +1,15 @@
 main .benefits::before {
+  top: 60px;
   content: "[Преимущества]";
+}
+
+main .benefits::after{
+  top: 0;
 }
 
 .benefits {
   position: relative;
-  padding-top: 74px;
+  margin-top: 74px;
   padding: 245px 0;
 }
 
@@ -42,7 +47,7 @@ main .benefits::before {
   right: 0;
   top: 0;
   width: 59%;
-  padding: 245px 0 242px;
+  padding: 245px 5.9% 242px;
   background-color: #131313;
   overflow: hidden;
   z-index: 100;

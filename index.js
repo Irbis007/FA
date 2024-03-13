@@ -1,19 +1,14 @@
-
-
 const faqs = document.querySelectorAll(".faq .faq__body .item");
 
 faqs.forEach((item) => {
   item.addEventListener("click", () => {
     if (!item.classList.contains("active")) {
-      // removeActive(faqs)
       item.classList.add("active");
     } else {
       item.classList.remove("active");
     }
   });
 });
-
-// CASE
 
 let mainContainer = document.querySelector("body");
 let triggerBlock = document.querySelector(".benefits__slider-target");
@@ -26,7 +21,7 @@ window.addEventListener("wheel", function (e) {
   if (triggerBlock && window.innerWidth > 991) {
     if (e.deltaY > 0) {
       if (
-        (window.innerHeight / 2 - triggerBlock.clientHeight / 2) + 20 >= scrollTop &&
+        window.innerHeight / 2 - triggerBlock.clientHeight / 2 + 20 >= scrollTop &&
         !(triggerBlock.scrollWidth - triggerBlock.clientWidth - 40 < triggerBlock.scrollLeft) &&
         scrollTop > 0
       ) {
@@ -38,7 +33,7 @@ window.addEventListener("wheel", function (e) {
       }
     } else if (e.deltaY < 0) {
       if (
-        (window.innerHeight / 2 - triggerBlock.clientHeight / 2) -20 <= scrollTop &&
+        window.innerHeight / 2 - triggerBlock.clientHeight / 2 - 20 <= scrollTop &&
         scrollPosition >= 0
       ) {
         mainContainer.classList.add("unscroll");
@@ -51,27 +46,6 @@ window.addEventListener("wheel", function (e) {
     }
   }
 });
-
-// VIDEO SECTION
-
-const videoSectionAside = document.querySelector(".video__prices");
-const videoSectionAsideData = [15100, 15110, 15120, 1530, 15140];
-
-
-
-for (let i = 0; i <= videoSectionAsideData.length - 1; i++) {
-  if (i === 6) {
-    videoSectionAside.innerHTML += `
-    <div class="aside__price active">${videoSectionAsideData[i]}.00</div>
-  `;
-  } else {
-    videoSectionAside.innerHTML += `
-    <div class="aside__price">${videoSectionAsideData[i]}.00</div>
-  `;
-  }
-}
-
-// TAB PRODUCT
 
 const tabButton = document.querySelectorAll(".products .item__top");
 const tabBody = document.querySelectorAll(".products .item__body");
@@ -107,19 +81,37 @@ function removeActive(list) {
   });
 }
 
+const scrollItems = document.querySelectorAll(".scroll-item");
+
+const scrollAnimation = () => {
+  let windowCenter = window.innerHeight / 2 + window.scrollY;
+  scrollItems.forEach((el) => {
+    let scrollOffset = el.offsetTop + el.offsetHeight / .3 ;
+    if (window.innerHeight / 1.4 >=  el.getBoundingClientRect().y) {
+      el.classList.add("animation-class");
+    }
+    console.log(el.getBoundingClientRect().y + window.innerHeight, windowCenter)
+  });
+};
+
+
+scrollAnimation();
+window.addEventListener("scroll", () => {
+  scrollAnimation();
+});
 
 const animation = lottie.loadAnimation({
-  container: document.getElementById('lottie-animation'), // контейнер для анимации
-  renderer: 'svg', // тип рендерера (может быть 'svg', 'canvas' или 'html')
-  loop: true, // зацикливание анимации
-  autoplay: true, // автоматический запуск анимации
-  path: './main.json' // путь к вашему JSON-файлу с анимацией
+  container: document.getElementById("lottie-animation"),
+  renderer: "svg",
+  loop: true,
+  autoplay: true,
+  path: "./main.json",
 });
 
 const animation2 = lottie.loadAnimation({
-  container: document.getElementById('lottie-animation2'), // контейнер для анимации
-  renderer: 'svg', // тип рендерера (может быть 'svg', 'canvas' или 'html')
-  loop: true, // зацикливание анимации
-  autoplay: true, // автоматический запуск анимации
-  path: './main.json' // путь к вашему JSON-файлу с анимацией
+  container: document.getElementById("lottie-animation2"),
+  renderer: "svg",
+  loop: true,
+  autoplay: true,
+  path: "./main.json",
 });

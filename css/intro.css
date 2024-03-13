@@ -1,10 +1,11 @@
 .intro {
   position: relative;
-  margin-top: 100px;
+  margin-top: 32px;
 }
 .intro .container{
   position: relative;
-
+  max-width: unset;
+  padding-left: 18%;
   z-index: 10;
 }
 
@@ -15,7 +16,7 @@ main .intro::after {
   aspect-ratio: 1/1;
   border-radius: 50%;
   border: 1px solid #fff;
-  right: -40%;
+  right: -32%;
   left: unset;
   top: 13px;
   opacity: 0.2;
@@ -28,24 +29,18 @@ main .intro::before {
 .intro .intro__title {
   color: #fff;
   font-family: "Pobeda Bold", sans-serif;
-  font-size: 224px;
-  padding-left: 100px;
+  font-size: calc(114px + (224 - 114) * ((100vw - 991px) / (1920 - 991)));
   letter-spacing: -0.04em;
-}
+  line-height: 85%;
 
-@media (max-width: 1800px) {
-  .intro .intro__title{
-    font-size: 12vw;
-  }
 }
 
 .intro .intro__title span {
-  margin-left: 460px;
+  margin-left: 32%;
 }
 
 .intro .intro__content {
   margin-top: -150px;
-  padding-left: 100px;
 }
 
 .intro .intro__content .content__descr {
@@ -68,14 +63,19 @@ main .intro::before {
 .intro__aside {
   position: absolute;
   left: 19px;
-  top: -42px;
+  top: -30px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 16px;
-  width: 88px;
+
+  width: calc(48px + (88 - 48) * ((100vw - 1366px) / (1920 - 1366)));
+  max-width: 88px;
+  min-width: 48px;
   padding: 32px 0;
+
   background: linear-gradient(#151515, #151515) padding-box,
     linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 0, 0, 0)) border-box;
   border: 1px solid transparent;
@@ -83,8 +83,13 @@ main .intro::before {
 }
 
 .intro__aside .item {
+  width: 36.7%;
   opacity: .4;
   transition: all 0.2s;
+}
+
+.intro__aside .item img{
+  width: 100%;
 }
 
 .intro__aside .item:hover {
@@ -112,9 +117,22 @@ main .intro::before {
   opacity: 0.9;
 }
 
-@media (max-width: 1380px) {
-  .intro .intro__title {
-    font-size: 150px;
+
+@media (max-width: 1800px) {
+  .intro .intro__title{
+    font-size: 12vw;
+  }
+}
+
+@media (max-width: 1366px) {
+  .intro .intro__title span{
+    margin-left: 40%;
+  }
+  .intro .intro__content{
+    margin-top: -110px;
+  }
+  .intro .intro__content .content__button{
+    margin-top: 46px;
   }
 }
 

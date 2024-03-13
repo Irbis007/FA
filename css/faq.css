@@ -1,6 +1,7 @@
 
 main .faq{
   margin-top: 204px;
+  overflow: hidden;
 }
 
 main .faq::before{
@@ -21,7 +22,6 @@ main .faq::before{
     rgba(21, 21, 21, 0)
     )
     1;
-    overflow: hidden;
 }
 
 .faq-circle__shadow {
@@ -76,7 +76,7 @@ main .faq::before{
     linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 0, 0, 0)) border-box;
   border-radius: 12px;
   border: 1px solid transparent;
-  transition: all .2s;
+  transition: all .5s;
   cursor: pointer;
 }
 
@@ -85,7 +85,7 @@ main .faq::before{
       padding-box,
     linear-gradient(to bottom, rgba(236, 192, 106, 0.4), rgba(255, 0, 0, 0)) border-box;
   box-shadow: inset 0 12px 14px rgba(236, 192, 106, 0.1);
-  transition: all .2s;
+  transition: all .5s;
 }
 
 .faq .faq__body .faq__item-top {
@@ -96,12 +96,12 @@ main .faq::before{
 .faq .faq__body .faq__item-top .faq__item-title {
   font-family: "Pobeda Bold", sans-serif;
   font-size: 42px;
-  transition: all 0.2s;
+  transition: all .5s;
 }
 
 .faq .faq__body .item:hover .faq__item-top .faq__item-title {
-  color: #ecc06a;
-  transition: all 0.2s;
+  color: #ecc06a; 
+  transition: all .5s;
 }
 
 .faq .faq__body .faq__item-top .faq__item-plus {

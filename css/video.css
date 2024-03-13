@@ -22,6 +22,11 @@
   display: flex;
   justify-content: center;
   margin-top: 100px;
+  background: linear-gradient(rgba(30, 30, 30, 0), rgba(35, 35, 35, 0), rgba(38, 38, 38, 0))
+  padding-box,
+linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 0, 0, 0)) border-box;
+  border: 18px solid transparent;
+  border-radius: 33px;
 }
 
 .video__wrapper .video__gradient {
@@ -67,7 +72,7 @@
   mask-composite: exclude; /*5*/
   border-radius: 50%;
   transform: translate(-50%, -50%);
-  animation: playAnim 1.5s linear 0s infinite running none;
+  animation: playAnim 3s linear 0s infinite running none;
   z-index: 100;
 }
 
@@ -105,6 +110,9 @@
   opacity: 1;
   transition: all 0.2s;
 }
+.button__aside .item.active{
+  opacity: 1;
+}
 .video .button__aside .item::after,
 .video .button__aside .item::before {
   content: "";
@@ -131,11 +139,11 @@
   background-color: #ed1b34;
   margin-left: auto;
 }
-.video .button__aside .item-1:hover::after {
+.video .button__aside .item-1:hover::after, .video .button__aside .item-1.active::after {
   background-color: #ed1b34;
   opacity: 0.2;
 }
-.video .button__aside .item-1:hover::before {
+.video .button__aside .item-1:hover::before, .video .button__aside .item-1.active::before {
   background-color: #ed1b34;
   opacity: 0.2;
 }
@@ -191,7 +199,7 @@
 
 .video__price-wrapper {
   position: absolute;
-  right: 10px;
+  right: 38px;
   top: 100px;
   padding-left: 10px;
   overflow: hidden;
@@ -200,7 +208,6 @@
 .video__prices {
   position: relative;
   width: 86px;
-  height: 717px;
   background: linear-gradient(#151515, #151515) padding-box,
     linear-gradient(
         to bottom,
@@ -214,7 +221,7 @@
 }
 
 .aside__price {
-  margin: 9px 0;
+  margin: 15px 0;
   display: flex;
   justify-content: center;
   color: #fff;
@@ -229,6 +236,22 @@
   color: #212121;
   transform: translateX(-10px);
   opacity: 0.5;
+}
+
+.aside__price:nth-child(14){
+  opacity: .15;
+}
+.aside__price:nth-child(15){
+  opacity: .10;
+}
+.aside__price:nth-child(16){
+  opacity: .05;
+}
+
+.video__price-gradient{
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 @media (max-width: 1675px) {

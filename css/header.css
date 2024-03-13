@@ -1,5 +1,10 @@
 
 
+.header .container{
+  padding: 0 6.3% 0 8.7%;
+  max-width: unset;
+}
+
 .header .container, .footer .footer__body{
   display: flex;
   align-items: center;
@@ -7,6 +12,7 @@
   margin-top: 24px;
 
 }
+
 
 
 .header .header__nav, .footer .footer__nav{
@@ -28,7 +34,7 @@
 
   font-family: 'Helvetica Neue', sans-serif;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 1rem;
   text-decoration: none;
   transition: all .2s;
 }
@@ -99,11 +105,19 @@
   font-weight: 400;
   font-size: 20px;
   text-decoration: none;
+  transition: all .2s;
 }
 
-.header .header__lang .lang.active, .footer .footer__lang .lang.active{
-  opacity: .5;
+.header .header__lang .active, .footer .footer__lang .active{
+  color: rgba(255, 255, 255, .5);
+  transition: all .2s;
 }
+
+.header .header__lang .lang:hover, .footer .footer__lang .lang:hover{
+  color: #fff;
+  transition: all .2s;
+}
+
 
 
 @media (max-width: 991px) {
@@ -115,9 +129,6 @@
   }
   .header .header__nav .list, .footer .footer__nav .list{
     max-width: 313px;
-  }
-  .header .header__nav .link, .footer .footer__nav .link{
-    font-size: 14px;
   }
   .header .header__button .button__tg, .footer .footer__button .button__tg{
     width: 156px;
@@ -147,9 +158,6 @@
   }
   .header .header__nav .list, .footer .footer__nav .list{
     flex-wrap: wrap;
-  }
-  .header .header__nav .link, .footer .footer__nav .link{
-    font-size: 12px;
   }
   .header .header__button .button__tg, .footer .footer__button .button__tg{
     width: max-content;

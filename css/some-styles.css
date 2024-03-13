@@ -136,7 +136,7 @@ footer::after {
 .deckor-3 {
   opacity: 0;
   width: 674px;
-  top: 780px;
+  top: 82%;
   right: -104px;
 
   animation: transparentAnim 1.3s 0.5s;
@@ -204,7 +204,7 @@ footer::after {
 }
 
 .intro-graph-1{
-  top: 450px;
+  top: 27%;
   left: 12px;
 }
 @media (max-width: 1450px) {
@@ -299,9 +299,6 @@ footer::after {
   animation: introCircleAnim 1s forwards;
 }
 
-.header{
-  height: 72px;
-}
 
 .header .logo {
   position: absolute;
@@ -327,6 +324,18 @@ footer::after {
 
 .header .container{
   position: relative;
+}
+
+.scroll-item{
+  transform: translateY(60px);
+  opacity: 0;
+  transition: all .6s;
+}
+
+.animation-class.scroll-item{
+  transform: translate(0);
+  opacity: 1;
+  transition: all .6s;
 }
 
 @keyframes asideAnim {
@@ -436,6 +445,58 @@ footer::after {
   100%{
     opacity: 0;
     z-index: -1;
+  
+  }
+}
 
+.card-anim{
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  filter: drop-shadow(0 0 10px #adbbff);
+  animation: card_line-anim__iu92O 12s linear infinite,card_line-opacity-loop__KzXmR 3s linear infinite;
+}
+
+.card-anim::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: conic-gradient(from calc(var(--angle) + 396deg), transparent 0, #adbbff 20%, transparent 25%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: xor;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  animation: inherit;
+}
+
+
+
+@property --angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg
+}
+
+@keyframes card_line-opacity-loop__KzXmR {
+  0% {
+      opacity: .75
+  }
+
+  50% {
+      opacity: 1
+  }
+
+  to {
+      opacity: .75
+  }
+}
+
+
+@keyframes card_line-anim__iu92O {
+  to {
+      --angle: 360deg
   }
 }
