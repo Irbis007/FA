@@ -106,8 +106,8 @@ footer::after {
   position: absolute;
   width: 391px;
   height: 0px;
-  border: 29px solid #fff;
-  filter: blur(162px);
+  border: 22px solid #fff;
+  filter: blur(112px);
   transform: rotate(45deg);
   opacity: 0.8;
 }
@@ -119,18 +119,18 @@ footer::after {
 .deckor-1 {
   opacity: 0;
   left: 17px;
-  top: -9px;
+  top: 130px;
   animation: transparentAnim 1.3s 0.5s;
   z-index: 1000;
   animation-fill-mode: forwards;
 }
 
 .deckor-2 {
-  left: 856px;
-  top: -9px;
+  left: 47%;
+  top: 220px;
+  width: 647px;
   animation: deckor2Anim 0.8s 0.4s;
   z-index: 1000;
-  transform: rotate(45);
 }
 
 .deckor-3 {
