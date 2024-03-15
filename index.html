@@ -8,17 +8,16 @@
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <div class="bg">
+    <!-- <div class="bg">
       <img loading="lazy" src="./assets/img/bg.svg" alt="bg" />
-    </div>
+    </div> -->
     <script src="./js/preloader.js"></script>
     <header class="header">
       <div class="intro-graph intro-graph-2">
         <img src="./assets/icons/intro-graph2.svg" alt="" />
       </div>
       <div class="deckor deckor-1"></div>
-      <div class="deckor deckor-2">
-      </div>
+      <div class="deckor deckor-2"></div>
       <div class="container">
         <div class="logo">
           <div class="logo__wrapper">
@@ -167,18 +166,18 @@
             <span class="title__yellow">я анализирую ценную бумагу Лукойл</span> и демонстрирую
             применение различных технических инструментов для успешной торговли:
           </h2>
-          <div class="button__aside">
+          <div class="button__aside scroll-item">
             <ul class="list">
-              <li class="item item-1 active scroll-item">
+              <li class="item item-1 active">
                 <img src="./assets/icons/video-aside1.svg" alt="aside-img" />
               </li>
-              <li class="item item-2 scroll-item">
+              <li class="item item-2">
                 <img src="./assets/icons/video-aside2.svg" alt="aside-img" />
               </li>
-              <li class="item item-3 scroll-item">
+              <li class="item item-3">
                 <img src="./assets/icons/video-aside3.svg" alt="aside-img" />
               </li>
-              <li class="item item-4 scroll-item">
+              <li class="item item-4">
                 <img src="./assets/icons/video-aside4.svg" alt="aside-img" />
               </li>
             </ul>
@@ -220,15 +219,15 @@
           <div class="products__tab">
             <ul class="list">
               <li class="item active">
-                <div class="item__top active scroll-item">
+                <div class="item__top active scroll-item scroll-group">
                   <div class="item__icon">
                     <img src="./assets/icons/products-teaching.svg" alt="teaching" />
                   </div>
                   <h3 class="item__title">
                     <span class="title__wrapper">
                       <span class="title__anim"></span>
-                      <span>Обучение</span>
-                    </span><span class="title__wrapper">
+                      <span>Обучение</span> </span
+                    ><span class="title__wrapper">
                       <span class="title__anim"></span>
                       <span>техническому</span>
                     </span>
@@ -238,7 +237,7 @@
                     </span>
                   </h3>
                 </div>
-                <div class="item__body active scroll-item">
+                <div class="item__body active scroll-item scroll-group">
                   <h3 class="item__body-title">Обучение техническому и волновому анализу</h3>
                   <div class="item__body-descr">
                     <p>
@@ -258,15 +257,15 @@
                 </div>
               </li>
               <li class="item">
-                <div class="item__top scroll-item">
+                <div class="item__top scroll-item scroll-group">
                   <div class="item__icon">
                     <img src="./assets/icons/products-comunity.svg" alt="comunity" />
                   </div>
                   <div class="item__title">
                     <span class="title__wrapper">
                       <span class="title__anim"></span>
-                      <span>Закрытое</span>
-                    </span><span class="title__wrapper">
+                      <span>Закрытое</span> </span
+                    ><span class="title__wrapper">
                       <span class="title__anim"></span>
                       <span>сообщество</span>
                     </span>
@@ -854,10 +853,17 @@
         <div class="container">
           <ul class="list">
             <li class="item scroll-item">
+              <div class="item__gradient"></div>
               <div class="card-anim"></div>
               <div class="item__bg">
-                <div id="lottie-animation"></div>
-                <div class="item__gradient"></div>
+                <lottie-player
+                  src="./anim.json"
+                  background="transparent"
+                  speed="1"
+                  style="height: 100%; width: auto;"
+                  loop
+                  autoplay
+                ></lottie-player>
               </div>
               <div class="item__body">
                 <h2 class="item__title">Интересует обучение?</h2>
@@ -1186,11 +1192,14 @@
       </div>
     </footer>
 
-    <script async type="module" src="./js/script.js"></script>
+    <script type="module" src="./js/script.js"></script>
     <script
-    async
-    src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.3/lottie.min.js"
+      <script
+      async
+      src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"
     ></script>
-    <script async src="./index.js"></script>
+
+   
+    <script src="./index.js"></script>
   </body>
 </html>

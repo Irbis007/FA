@@ -3,34 +3,37 @@
   padding-bottom: 170px;
 }
 
-.feedback::before{
-  content: '[Отзывы]';
+.feedback::before {
+  content: "[Отзывы]";
   top: 170px;
 }
 
-.feedback .container{
+.feedback .container {
+  width: 87%;
   padding: 0;
 }
 
 .feedback .feedback__title {
-  font-size: 72px;
+  font-size: 3.6rem;
   padding-left: 108px;
 }
 
-.feedback .swiper{
+.feedback .swiper {
   margin-top: 52px;
   padding-bottom: 78px;
 }
 
-.feedback .swiper-pagination{
+.feedback .swiper-pagination {
   bottom: 0px;
   z-index: 1000;
 }
-.feedback .swiper-pagination-bullet.swiper-pagination-bullet-active, .results .swiper-pagination-bullet.swiper-pagination-bullet-active{
-  background-color: #ECC06A;
+.feedback .swiper-pagination-bullet.swiper-pagination-bullet-active,
+.results .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #ecc06a;
 }
-.feedback .swiper-pagination-bullet, .results .swiper-pagination-bullet{
-  background-color: rgba(255, 255, 255, .5);
+.feedback .swiper-pagination-bullet,
+.results .swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.5);
   cursor: pointer;
 }
 
@@ -46,71 +49,71 @@
   transition: all 0.2s;
 }
 
-.feedback .slide__top{
+.feedback .slide__top {
   display: flex;
   align-items: center;
   gap: 24px;
 }
 
-.feedback .slide__top .top__title{
+.feedback .slide__top .top__title {
   color: #fff;
-  font-family: 'Pobeda Bold', sans-serif;
-  font-size: 42px;
+  font-family: "Pobeda Bold", sans-serif;
+  font-size: 2.1rem;
   line-height: 120%;
 }
 
-.feedback .slide__top .top__subtitle{
-  color: #ECC06A;
+.feedback .slide__top .top__subtitle {
+  color: #ecc06a;
   font-family: "Helvetiva Neue", sans-serif;
   font-weight: 300;
-  font-size: 12px;
+  font-size: 0.6rem;
   line-height: 120%;
-  letter-spacing: .25em;
+  letter-spacing: 0.25em;
   text-transform: uppercase;
 }
 
-.feedback .slide__top .top__descr{
+.feedback .slide__top .top__descr {
   margin-top: 6px;
   color: #fff;
   font-family: "Helvetica Neue", sans-serif;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 0.7rem;
   line-height: 130%;
-  opacity: .5;
+  opacity: 0.5;
 }
 
-.feedback .slide__body{
+.feedback .slide__body {
   margin-top: 24px;
 }
 
-.feedback .slide__body .body__descr{
+.feedback .slide__body .body__descr {
   color: #fff;
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 0.9rem;
   line-height: 160%;
 }
 
-.feedback .slide__body .body__prices{
+.feedback .slide__body .body__prices {
   display: flex;
   justify-content: space-between;
   width: 100%;
   margin-top: 24px;
 }
 
-.feedback .slide__body .body__price .price__subtitle{
+.feedback .slide__body .body__price .price__subtitle {
   color: #fff;
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 0.7rem;
   line-height: 160%;
-  opacity: .5;
+  opacity: 0.5;
 }
 
-.feedback .slide__body .body__price .price__title{
+.feedback .slide__body .body__price .price__title {
   color: #fff;
-  font-family: 'Pobeda Bold', sans-serif;
-  font-size: 36px;
+  font-family: "Pobeda Bold", sans-serif;
+  font-size: 1.8rem;
   line-height: 120%;
 }
 
@@ -118,42 +121,42 @@
   .feedback {
     padding: 86px 0;
   }
-  .feedback::before{
+  .feedback::before {
     top: 100px;
   }
-  .feedback .container{
+  .feedback .container {
     padding: 0 12px;
+    width: 100%;
   }
-  .feedback .feedback__title{
-    font-size: 54px;
+  .feedback .feedback__title {
+    font-size: 3.7rem;
     text-align: center;
   }
-  .feedback .swiper{
+  .feedback .swiper {
     padding-bottom: 40px;
   }
-  .feedback .slide__body .body__descr{
-    font-size: 16px;
+  .feedback .slide__body .body__descr {
+    font-size: 1rem;
   }
 }
 
-
 @media (max-width: 767px) {
-  .feedback::before{
+  .feedback::before {
     top: 60px;
   }
-  .feedback .swiper-slide{
+  .feedback .swiper-slide {
     min-width: 100%;
   }
-  .feedback .slide__top .top__title{
-    font-size: 32px;
+  .feedback .slide__top .top__title {
+    font-size: 2.2rem;
   }
-  .feedback .slide__top .top__subtitle{
-    font-size: 8px;
+  .feedback .slide__top .top__subtitle {
+    font-size: 0.6rem;
   }
-  .feedback .slide__body .body__descr{
-    font-size: 14px;
+  .feedback .slide__body .body__descr {
+    font-size: 1rem;
   }
-  .feedback .slide__body .body__prices{
+  .feedback .slide__body .body__prices {
     flex-direction: column;
   }
 }

@@ -58,7 +58,7 @@
 
   color: #fff;
   font-family: 'Pobeda Bold', sans-serif;
-  font-size: 22px;
+  font-size: 1.3rem;
   text-transform: uppercase;
   cursor: pointer;
   z-index: 10;
@@ -95,15 +95,17 @@
 }
 
 .header .header__lang, .footer .footer__lang{
+  position: relative;
   display: flex;
   gap: 21px;
+  z-index: 10;
 }
 
 .header .header__lang .lang, .footer .footer__lang .lang{
   color: #fff;
   font-family: 'Helvetica Neue';
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1rem;
   text-decoration: none;
   transition: all .2s;
 }
@@ -133,7 +135,7 @@
   .header .header__button .button__tg, .footer .footer__button .button__tg{
     width: 156px;
     height: 48px;
-    font-size: 18px;
+    font-size: 1.1rem;
   }
   .header .header__button .button__tg span, .footer .footer__button .button__tg span{
     padding-right: 16px;
@@ -143,7 +145,7 @@
     right: 6px;
   }
   .header .header__lang .lang, .footer .footer__lang .lang{
-    font-size: 14px;
+    font-size: .8rem;
   }
 }
 

@@ -16,8 +16,8 @@
 @import url("./css/footer.css");
 
 body {
-  background-repeat: repeat;
   background-color: #151515;
+  background: url('./assets/img/bg.svg');
 }
 
 body > .bg{
@@ -36,10 +36,15 @@ body > .bg img{
 
 .about .about__img{
   position: absolute;
+  width: 50%;
   top: 50%;
   left: 0;
   transform: translateY(-50%);
   z-index: 1;
+}
+
+.about .about__img img{
+  width: 100%;
 }
 
 @media (max-width: 991px) {

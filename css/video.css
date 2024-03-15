@@ -11,7 +11,7 @@
 }
 
 .video__title {
-  font-size: 52px;
+  font-size: 2.6rem;
   text-align: center;
 }
 
@@ -216,7 +216,7 @@ linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 0, 0, 0)) border-
 .video__price-wrapper {
   position: absolute;
   right: 38px;
-  top: 100px;
+  top: 140px;
   padding-left: 10px;
   overflow: hidden;
 }
@@ -313,7 +313,7 @@ linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 0, 0, 0)) border-
     padding: 0 14px;
   }
   .video__title {
-    font-size: 36px;
+    font-size: 2rem;
   }
   .video .button__aside {
     position: static;
@@ -374,7 +374,7 @@ linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 0, 0, 0)) border-
     padding: 9px 12px;
   }
   .video__title {
-    font-size: 27px;
+    font-size: 1.9rem;
   }
   .video__wrapper {
     margin-top: 14px;

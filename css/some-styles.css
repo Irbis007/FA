@@ -35,7 +35,7 @@ footer::before {
   color: #ffffff;
   font-family: "Helvetica Neue", sans-serif;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 0.7rem;
   letter-spacing: 0.26rem;
   text-transform: uppercase;
   opacity: 0.5;
@@ -51,7 +51,7 @@ footer::after {
   color: #ffffff;
   font-family: "Helvetica Neue", sans-serif;
   font-weight: 900;
-  font-size: 18px;
+  font-size: .9rem;
 }
 
 .title {
@@ -81,7 +81,7 @@ footer::after {
   border-radius: 6px;
 
   font-family: "Pobeda Bold", sans-serif;
-  font-size: 32px;
+  font-size: 1.6rem;
   letter-spacing: -0.04rem;
   text-transform: uppercase;
   transition: all 0.2s;
@@ -205,7 +205,7 @@ footer::after {
 
 .intro-graph-1{
   top: 27%;
-  left: 12px;
+  left: 40px;
 }
 @media (max-width: 1450px) {
   .deckor-2 {
@@ -248,8 +248,7 @@ footer::after {
     filter: blur(66px);
   }
   .intro-graph-1{
-    top: 200px;
-    left: 12px;
+    left: 40px;
   }
 }
 
@@ -453,7 +452,7 @@ footer::after {
   position: absolute;
   inset: 0;
   border-radius: inherit;
-  filter: drop-shadow(0 0 10px #adbbff);
+  filter: drop-shadow(0 0 10px #ECC06A);
   animation: card_line-anim__iu92O 12s linear infinite,card_line-opacity-loop__KzXmR 3s linear infinite;
 }
 
@@ -463,13 +462,18 @@ footer::after {
   inset: 0;
   border-radius: inherit;
   padding: 1px;
-  background: conic-gradient(from calc(var(--angle) + 396deg), transparent 0, #adbbff 20%, transparent 25%);
+  background: conic-gradient(from calc(var(--angle) + 396deg), transparent 0, #ECC06A 20%, transparent 25%);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask-composite: xor;
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   animation: inherit;
+}
+
+
+.item:nth-child(2) .card-anim::before{
+  background: conic-gradient(from calc(var(--angle) - 140deg), transparent 0, #ECC06A 20%, transparent 25%);
 }
 
 

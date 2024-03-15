@@ -8,18 +8,21 @@
 }
 
 .about .container{
+  display: flex;
+  align-items: center;
   padding-top: 280px;
   padding-bottom: 297px;
 }
 
 .about .about__body {
   max-width: 810px;
+  width: 50%;
   margin-left: auto;
 }
 
 .about .about__title {
   font-family: "Pobeda Bold", sans-serif;
-  font-size: 64px;
+  font-size: 3.2rem;
   line-height: 120%;
   letter-spacing: -0.04em;
 }
@@ -29,7 +32,7 @@
   margin-top: 52px;
   font-family: "Helvetica Neue", sans-serif;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 1rem;
   line-height: 160%;
 }
 
@@ -52,7 +55,7 @@
   margin-top: 24px;
   font-family: 'Helvetica Neue', sans-serif;
   font-weight: 300;
-  font-size: 18px;
+  font-size: .9rem;
   line-height: 160%;
 }
 
@@ -65,10 +68,10 @@
     margin-left: 0;
   }
   .about .about__title {
-    font-size: 36px;
+    font-size: 2.2rem;
   }
   .about .about__descr{
-    font-size: 16px;
+    font-size: 1rem;
     max-width: 466px;
   }
   .about .about__cards{
@@ -93,7 +96,7 @@
   }
   .about .about__title{
     text-align: center;
-    font-size: 27px;
+    font-size: 1.9rem;
   }
   .about .about__descr{
     margin: 0 auto;

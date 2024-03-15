@@ -29,7 +29,7 @@ main .intro::before {
 .intro .intro__title {
   color: #fff;
   font-family: "Pobeda Bold", sans-serif;
-  font-size: calc(114px + (224 - 114) * ((100vw - 991px) / (1920 - 991)));
+  font-size: 11.2rem;
   letter-spacing: -0.04em;
   line-height: 85%;
 
@@ -118,11 +118,7 @@ main .intro::before {
 }
 
 
-@media (max-width: 1800px) {
-  .intro .intro__title{
-    font-size: 12vw;
-  }
-}
+
 
 @media (max-width: 1366px) {
   .intro .intro__title span{
@@ -155,7 +151,7 @@ main .intro::before {
   }
   .intro .intro__title {
     padding-left: 68px;
-    font-size: 114px;
+    font-size: 7.1rem;
   }
   .intro .intro__title div {
     margin-left: 340px;
@@ -178,7 +174,7 @@ main .intro::before {
   }
   .intro .intro__title {
     padding-left: 0px;
-    font-size: 60px;
+    font-size: 3.85rem;
     text-align: center;
   }
   .intro .intro__title span {

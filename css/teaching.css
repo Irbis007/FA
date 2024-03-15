@@ -10,6 +10,11 @@ main .teaching::after{
 
 .teaching {
   color: #fff;
+  
+}
+
+.teaching .container{
+  width: 87%;
 }
 
 .teaching .list {
@@ -17,17 +22,33 @@ main .teaching::after{
   gap: 24px;
 }
 
+.teaching .list.scroll-item {
+  opacity: 1;
+  transform: translate(0);
+}
+
 .teaching .item {
   position: relative;
   width: calc(50% - 12px);
 
-  background: linear-gradient(#131313, #131313)
+  background: linear-gradient(108deg,#131313 68%, #292929, #1E1E1E, #131313)
       padding-box,
     linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 0, 0, 0)) border-box;
   border-radius: 12px;
   border: 1px solid transparent;
-  transition: all 0.2s;
+  transform: translateY(60px);
+  opacity: 0;
+  transition: all .6s;
   overflow: hidden;
+}
+
+.teaching .item:nth-child(2){
+  transition: all .6s .1s;
+}
+
+
+.teaching .item.animation-class:nth-child(2){
+  transition: all .6s .2s;
 }
 
 .teaching .item__bg {
@@ -36,35 +57,40 @@ main .teaching::after{
   inset: 2px;
   border-radius: inherit;
   overflow: hidden;
-
+  opacity: .7;
 }
 
-.teaching .item__bg .item__gradient {
+.teaching .item.animation-class{
+  transform: translate(0);
+  opacity: 1;
+  transition: all .6s;
+}
+
+
+.teaching  .item__gradient {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 423px;
-
-  background: linear-gradient(
-    45deg,
-    rgb(19, 19, 19, 0.2),
-    rgb(41, 41, 41, 0.2),
-    rgb(30, 30, 30, 0.2),
-    rgb(18, 18, 18, 0.2)
-  );
-  z-index: 100;
+  height: 100%;
+  inset: 2px;
+  background: linear-gradient(108deg,#13131368 68%, #292929, #1e1e1e, #131313);
+  z-index: 10;
 }
 
 .teaching .item__body {
   position: relative;
-  padding: 302px 58px 83px 58px;
-  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 37.8% 7% 14% 7%;
+  z-index: 100;
 }
 
 .teaching .item__title {
   font-family: "Pobeda Bold", sans-serif;
-  font-size: 64px;
+  font-size: 3.2rem;
   text-align: center;
 }
 
@@ -74,7 +100,7 @@ main .teaching::after{
   margin-top: 24px;
   font-family: "Helvetica Neue", sans-serif;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 1.2rem;
   line-height: 160%;
   text-align: center;
 }
@@ -83,6 +109,14 @@ main .teaching::after{
   display: block;
   margin: 0 auto;
   margin-top: 32px;
+  scale: 1.2;
+  transition: all 1s .6s;
+}
+
+
+.teaching .item.animation-class .item__button{
+  scale: 1;
+  transition: all 1s .6s;
 }
 
 @media (max-width: 1100px) {
@@ -91,6 +125,7 @@ main .teaching::after{
   }
   .teaching .item {
     width: 100%;
+    background: linear-gradient(108deg,#131313 68%, #292929, #1e1e1e, #131313);
   }
   .teaching .item__bg{
     overflow: hidden;
@@ -98,8 +133,10 @@ main .teaching::after{
     bottom: 0;
   }
   .teaching .item__bg lottie-player{
-    transform: translateX(-50%);
-    width: 400%;
+    height: 100%;
+  }
+  .teaching  .item__gradient{
+    display: none;
   }
   .teaching .list .item__body{
     width: 315px;
@@ -108,15 +145,16 @@ main .teaching::after{
     padding: 0;
   }
   .teaching .list .item__body .item__title{
-    font-size: 54px;
+    font-size: 3.3rem;
     text-align: left;
   }
   .teaching .list .item__body .item__descr{
-    font-size: 16px;
+    font-size: 1rem;
     text-align: left;
   }
   .teaching .list .item__body .item__button{
-    font-size: 27px;
+    font-size: 1.6rem;
+    padding: 24px 48px;
   }
 }
 
@@ -152,10 +190,10 @@ main .teaching::after{
   }
   .teaching .list .item__body .item__title{
     text-align: center;
-    font-size: 32px;
+    font-size: 2.2rem;
   }
   .teaching .list .item__body .item__descr{
     text-align: center;
-    font-size: 14px;
+    font-size: 1rem;
   }
 }

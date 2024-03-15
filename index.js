@@ -1,3 +1,5 @@
+
+
 const faqs = document.querySelectorAll(".faq .faq__body .item");
 
 faqs.forEach((item) => {
@@ -82,13 +84,20 @@ function removeActive(list) {
 }
 
 const scrollItems = document.querySelectorAll(".scroll-item");
+const scrollGroup = document.querySelectorAll('.scroll-group');
+
+
 
 const scrollAnimation = () => {
-  let windowCenter = window.innerHeight / 2 + window.scrollY;
-  scrollItems.forEach((el) => {
-    let scrollOffset = el.offsetTop + el.offsetHeight / .3 ;
-    if (window.innerHeight / 1.4 >=  el.getBoundingClientRect().y) {
-      el.classList.add("animation-class");
+  scrollItems.forEach((el, i) => {
+    if (window.innerHeight / 1.4 >=  el.getBoundingClientRect().y ) {
+      if(el.classList.contains('scroll-group')){
+        scrollItems[i].classList.add('animation-class');
+        scrollItems[i+2].classList.add('animation-class');
+        scrollItems[i+3].classList.add('animation-class');
+      } else{
+        el.classList.add("animation-class");
+      }
     }
   });
 };
@@ -99,18 +108,3 @@ window.addEventListener("scroll", () => {
   scrollAnimation();
 });
 
-const animation = lottie.loadAnimation({
-  container: document.getElementById("lottie-animation"),
-  renderer: "svg",
-  loop: true,
-  autoplay: true,
-  path: "./main.json",
-});
-
-const animation2 = lottie.loadAnimation({
-  container: document.getElementById("lottie-animation2"),
-  renderer: "svg",
-  loop: true,
-  autoplay: true,
-  path: "./main.json",
-});

@@ -10,7 +10,7 @@ main .faq::before{
 
 .faq .container {
   position: relative;
-  max-width: 1390px;
+  width:72%;
   padding-top: 150px;
   border: none;
   border-top: 3px solid transparent;
@@ -49,12 +49,12 @@ main .faq::before{
   flex-direction: column;
   width: max-content;
   margin-right: 43px;
-  font-size: 66px;
+  font-size: 3.3rem;
   text-align: right;
 }
 
 .faq .faq__title-big {
-  font-size: 224px;
+  font-size: 11.2rem;
 }
 
 .faq .faq__title .yellow__span {
@@ -95,7 +95,7 @@ main .faq::before{
 
 .faq .faq__body .faq__item-top .faq__item-title {
   font-family: "Pobeda Bold", sans-serif;
-  font-size: 42px;
+  font-size: 2.1rem;
   transition: all .5s;
 }
 
@@ -163,7 +163,7 @@ main .faq::before{
 
   font-family: "Helvetica Neue", sans-serif;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 1rem;
   line-height: 160%;
 }
 
@@ -178,19 +178,20 @@ main .faq::before{
   }  
   .faq .container{
     padding-top: 71px;
+    width: 100%;
   }
   .faq .faq__title-big{
-    font-size: 144px;
+    font-size: 9rem;
   }
   .faq .faq__title-small{
-    font-size: 54px;
+    font-size: 3.3rem;
     margin-right: 14px;
   }
   .faq .faq__body .item{
     padding: 24px;
   }
   .faq .faq__body .faq__item-top .faq__item-title {
-    font-size: 36px;
+    font-size: 2.2rem;
   }
 }
 
@@ -212,20 +213,20 @@ main .faq::before{
     align-items: start;;
   }
   .faq .faq__title-big{
-    font-size: 96px;
+    font-size: 6.85rem;
     letter-spacing: -.04rem;
   }
   .faq .faq__title-small{
     flex-direction: row;
     text-align-last: left;
-    font-size: 27px;
+    font-size: 1.9rem;
     margin-right: 0px;
   }
   .faq .faq__body .item{
     padding: 12px;
   }
   .faq .faq__body .faq__item-top .faq__item-title {
-    font-size: 27px;
+    font-size: 1.9rem;
   }
   .faq .faq__body .faq__item-top .faq__item-plus{
     display: none;

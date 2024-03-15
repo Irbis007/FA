@@ -16,11 +16,11 @@ main .license{
 
 
 .license .container{
-  max-width: 1270px;
+  width: 72%;
 }
 
 .license .license__title{
-  font-size: 72px;
+  font-size: 3.6rem;
 }
 
 .license .license__body{
@@ -128,8 +128,10 @@ main .license{
 
 
 @media (max-width: 991px) {
+  .license .container{
+    width: 100%;
+  }
   .license .license__title{
-    font-size: 54px;
     text-align: center;
   }
 }

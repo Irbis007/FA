@@ -60,7 +60,7 @@
 .products__tab .item__top .item__title {
   padding-left: 24px;
   font-family: "Pobeda Bold", sans-serif;
-  font-size: 36px;
+  font-size: 1.8rem;
   transition: all .5s;
 }
 
@@ -98,6 +98,16 @@
 
 .products__tab .item__top.active .item__title .title__anim{
   width: 100%;
+  transition: all .5s;
+}
+
+.products__tab .item__top .item__icon{
+  scale: 1;
+  transition: all .5s;
+}
+
+.products__tab .item__top.active .item__icon{
+  scale: 1.2;
   transition: all .5s;
 }
 
@@ -143,7 +153,7 @@
 
 .products__tab .item__body-title {
   font-family: "Pobeda Bold", sans-serif;
-  font-size: 64px;
+  font-size: 3.2rem;
 }
 
 .products__tab .item__body-descr {
@@ -153,7 +163,7 @@
   margin-top: 52px;
   font-family: "Helvetica Neue", sans-serif;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 1rem;
   line-height: 160%;
 }
 
@@ -165,7 +175,6 @@
   width: 116px;
   height: 1px;
   background-color: #fff;
-  opacity: 0.2;
 }
 
 .products__tab .item__body-descr a {
@@ -247,14 +256,11 @@
     left: 370px;
     width: 263px;
   }
-  .products__tab .list .item__top .item__title{
-    font-size: 30px;
-  }
   .products__tab .list .item__body{
     left: 100%;
   }
   .products__tab .list .item__body-title{
-    font-size: 54px;
+    font-size: 3.3rem;
   }
   .products__tab .list .item__body-descr::before{
     width: 80px;
@@ -308,7 +314,7 @@
   .products__tab .list .item:nth-child(2) .item__top .item__title,
   .products__tab .list .item:nth-child(3) .item__top .item__title{
     max-width: 320px;
-    font-size: 27px;
+    font-size: 1.7rem;
   }
   .products__tab .list .item:nth-child(1) .item__top {
     left: 0;
@@ -332,7 +338,7 @@
   }
   .products__tab .list .item .item__body .item__body-descr{
     width: 320px;
-    font-size: 16px;
+    font-size: 1rem;
     margin-left: 270px;
     margin-top: 30px;
   }
