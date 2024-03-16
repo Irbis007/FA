@@ -223,7 +223,7 @@
 
 
 
-@media (max-width: 1350px) {
+@media (max-width: 1366px) {
   .products__tab .list .item .item__body {
     left: calc(100% + 20px);
   }
