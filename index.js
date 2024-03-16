@@ -31,7 +31,7 @@ window.addEventListener("wheel", function (e) {
         triggerBlock.scrollLeft + triggerBlockWrapper.clientWidth <triggerBolckContetn.scrollWidth
       ) {
         mainContainer.classList.add("unscroll");
-        scrollPosition += 40;
+        scrollPosition += 15;
         triggerBlock.scrollLeft = scrollPosition;
       } else {
         mainContainer.classList.remove("unscroll");
@@ -43,7 +43,7 @@ window.addEventListener("wheel", function (e) {
       ) {
         mainContainer.classList.add("unscroll");
 
-        scrollPosition -= 40;
+        scrollPosition -= 15;
         triggerBlock.scrollLeft = scrollPosition;
       } else {
         mainContainer.classList.remove("unscroll");
@@ -74,7 +74,7 @@ licenses.forEach((item) => {
   item.addEventListener("click", () => {
     licensesImg.src = item.children[0].src
     licensesImg.parentElement.classList.add('active')
-    licensesClose.style.left = `calc(50% + ${licensesImg.clientWidth / 2}px + 40px)`
+    licensesClose.style.left = `calc(50% + ${licensesImg.clientWidth / 2}px - 40px)`
   });
 });
 
