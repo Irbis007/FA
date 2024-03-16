@@ -17,7 +17,7 @@
 
 body {
   background-color: #151515;
-  background: url('./assets/img/bg-big.svg');
+  background: url('./assets/img/bg.svg');
 }
 
 body > .bg{
