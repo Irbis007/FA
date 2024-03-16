@@ -34,45 +34,6 @@ body > .bg img{
   width: 100%;
 }
 
-.about .about__img{
-  position: absolute;
-  width: 50%;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  z-index: 1;
-}
-
-.about .about__img img{
-  width: 100%;
-}
-
-@media (max-width: 991px) {
-  .about .about__img{
-    left: unset;
-    right: -310px;
-  }
-}
-
-@media (max-width: 767px) {
-  .about .about__img{
-    width: 100%;
-    top: -100px;
-    left:  unset;
-    right:  50%;
-    transform: translateX(50%);
-  }
-  .about .about__img img{
-    width: 100%;
-  }
-}
-
-.about__body{
-  position: relative;
-  z-index: 10;
-}
-
-
 @media (min-width: 1920px) {
   html{
     font-size: 20px;
