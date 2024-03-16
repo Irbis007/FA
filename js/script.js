@@ -5,7 +5,6 @@ const swiper = new Swiper(".swiper", {
   loop: true,
   slidesPerView: 1,
   spaceBetween: 24,
-  autoHeight: true,
   speed: 1000,
   breakpoints: {
     768: {
