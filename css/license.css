@@ -45,27 +45,67 @@ main .license{
   cursor: pointer;
 }
 
-.license__body .item.active{
+.license .overview{
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
-  border: none;
+  opacity: 0;
+  z-index: -1;
+  transition: all .7s;
+}
+
+.license .overview .close{
+  position: absolute;
+  right: 50%;
+  top: 20px;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.license .overview .close::before, 
+.license .overview .close::after{
+  content: '';
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #757575;
+  transition: all .6s;
+}
+
+.license .overview .close::after{
+  transform:  rotate(45deg);  
+  top: 8px;
+}
+
+.license .overview .close::before{
+  transform:  rotate(-45deg); 
+  left: 1px;
+  top: 10px;
+  left: 0px;
+}
+
+.license .overview .close:hover::before, 
+.license .overview .close:hover::after{
+  background-color: #fff;
+  transition: all .6s;
+}
+
+.license .overview.active{
   background: rgb(21, 21, 21, .7);
+  opacity: 1;
   z-index: 10000;
+  transition: all .7s;
 }
 
-.license__body .item.active:hover{
-  border: none;
-  border-radius: 0;
-  background: rgb(21, 21, 21, .7);
-  box-shadow:none;
-}
 
-.license .license__body .item.active img{
+.license .overview img{
   display: flex;
   margin: 0 auto;
+  margin-top: 5vh;
   height: 90vh;
   width: auto;
 }
@@ -125,6 +165,8 @@ main .license{
   border-radius: 12px;
   width: 100%;
 }
+
+
 
 
 @media (max-width: 991px) {

@@ -52,38 +52,6 @@ window.addEventListener("wheel", function (e) {
   }
 });
 
-// window.addEventListener("wheel", function (e) {
-//   if (triggerBlock) {
-//     if (
-//       this.window.scrollY + 100 >= triggerBlock.offsetTop &&
-//       triggerBlock.clientWidth != triggerBlock.scrollWidth - triggerBlock.scrollLeft &&
-//       e.deltaY > 0 &&
-//       this.window.scrollY <= triggerBlock.clientHeight + triggerBlock.offsetTop - 90
-//     ) {
-//       mainContainer.style.overflow = "hidden";
-//       if (e.deltaY > 0) {
-//         scrollPosition += 40;
-//       } else {
-//         scrollPosition -= 40;
-//       }
-//       triggerBlock.scrollLeft = scrollPosition;
-//     } else if (
-//       e.deltaY < 0 &&
-//       this.window.scrollY + 100 <= triggerBlock.offsetTop &&
-//       triggerBlock.scrollLeft != 0
-//     ) {
-//       mainContainer.style.overflow = "hidden";
-//       if (e.deltaY > 0) {
-//         scrollPosition += 80;
-//       } else {
-//         scrollPosition -= 80;
-//       }
-//       triggerBlock.scrollLeft = scrollPosition;
-//     } else {
-//       mainContainer.style.overflow = "auto";
-//     }
-//   }
-// });
 
 
 const tabButton = document.querySelectorAll(".products .item__top");
@@ -99,20 +67,21 @@ tabButton.forEach((item, i) => {
 });
 
 const licenses = document.querySelectorAll(".license__body .item");
+const licensesImg = document.querySelector(".license .overview img");
+const licensesClose = document.querySelector(".license .overview .close");
 
 licenses.forEach((item) => {
   item.addEventListener("click", () => {
-    item.classList.add("active");
-    mainContainer.style.overflow = "hidden";
+    licensesImg.src = item.children[0].src
+    licensesImg.parentElement.classList.add('active')
+    licensesClose.style.left = `calc(50% + ${licensesImg.clientWidth / 2}px + 40px)`
   });
 });
 
-document.addEventListener("click", (e) => {
-  if (e.target.closest(".license") && e.target.tagName != "IMG") {
-    removeActive(licenses);
-    mainContainer.style.overflow = "auto";
-  }
-});
+licensesClose.addEventListener('click', () =>{
+  licensesImg.parentElement.classList.remove('active')
+})
+
 
 function removeActive(list) {
   list.forEach((item) => {
