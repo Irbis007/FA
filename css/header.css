@@ -65,11 +65,14 @@
   font-size: 1.3rem;
   text-transform: uppercase;
   cursor: pointer;
+  transition: all .5s;
   z-index: 10;
 }
 
 .header .header__button .button__tg:hover, .footer .footer__button .button__tg:hover{
-  box-shadow: 0 12px 40px rgba(41, 182, 246, 0.45);
+  box-shadow: 0 12px 44px rgba(41, 182, 246, 0.45);
+  transition: all .5s;
+  filter: drop-shadow(0 0px 0 #0785BE);
 }
 
 .header .header__button .button__tg span, .footer .footer__button .button__tg span{
