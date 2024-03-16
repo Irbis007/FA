@@ -209,6 +209,13 @@ footer::after {
   left: 40px;
 }
 
+.stars{
+  position: absolute;
+  left: 40%;
+  top: 0;
+}
+
+
 
 @media (max-width: 991px) {
   .deckor-2,
@@ -225,6 +232,9 @@ footer::after {
     width: 383px;
     top: 304px;
     right: -84px;
+  }
+  .stars{
+    display: none;
   }
 }
 
