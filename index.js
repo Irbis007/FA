@@ -14,6 +14,8 @@ faqs.forEach((item) => {
 
 let mainContainer = document.querySelector("body");
 let triggerBlock = document.querySelector(".benefits__slider-target");
+let triggerBlockWrapper = document.querySelector('.benefits__slider')
+let triggerBolckContetn = document.querySelector('.benefits__slider-wrapper')
 
 let scrollPosition = 0;
 let scrollR = triggerBlock.scrollWidth;
@@ -25,7 +27,8 @@ window.addEventListener("wheel", function (e) {
       if (
         window.innerHeight / 2 - triggerBlock.clientHeight / 2 + 20 >= scrollTop &&
         !(triggerBlock.scrollWidth - triggerBlock.clientWidth - 40 < triggerBlock.scrollLeft) &&
-        scrollTop > 0
+        scrollTop > 0 &&
+        triggerBlock.scrollLeft + triggerBlockWrapper.clientWidth <triggerBolckContetn.scrollWidth
       ) {
         mainContainer.classList.add("unscroll");
         scrollPosition += 40;
@@ -48,6 +51,40 @@ window.addEventListener("wheel", function (e) {
     }
   }
 });
+
+// window.addEventListener("wheel", function (e) {
+//   if (triggerBlock) {
+//     if (
+//       this.window.scrollY + 100 >= triggerBlock.offsetTop &&
+//       triggerBlock.clientWidth != triggerBlock.scrollWidth - triggerBlock.scrollLeft &&
+//       e.deltaY > 0 &&
+//       this.window.scrollY <= triggerBlock.clientHeight + triggerBlock.offsetTop - 90
+//     ) {
+//       mainContainer.style.overflow = "hidden";
+//       if (e.deltaY > 0) {
+//         scrollPosition += 40;
+//       } else {
+//         scrollPosition -= 40;
+//       }
+//       triggerBlock.scrollLeft = scrollPosition;
+//     } else if (
+//       e.deltaY < 0 &&
+//       this.window.scrollY + 100 <= triggerBlock.offsetTop &&
+//       triggerBlock.scrollLeft != 0
+//     ) {
+//       mainContainer.style.overflow = "hidden";
+//       if (e.deltaY > 0) {
+//         scrollPosition += 80;
+//       } else {
+//         scrollPosition -= 80;
+//       }
+//       triggerBlock.scrollLeft = scrollPosition;
+//     } else {
+//       mainContainer.style.overflow = "auto";
+//     }
+//   }
+// });
+
 
 const tabButton = document.querySelectorAll(".products .item__top");
 const tabBody = document.querySelectorAll(".products .item__body");

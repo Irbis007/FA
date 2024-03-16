@@ -17,7 +17,7 @@
 
 body {
   background-color: #151515;
-  background: url('./assets/img/bg.svg');
+  background: url('./assets/img/bg-big.svg');
 }
 
 body > .bg{
@@ -92,9 +92,13 @@ body > .bg img{
   }
 }
 
+
 @media (max-width: 767px) {
   html{
     font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (768 - 320)));
   }
+}
+
+@media (max-width: 320px) {
 }
  
