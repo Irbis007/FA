@@ -16,8 +16,8 @@
 @import url("./css/footer.css");
 
 body {
-  background-color: #151515;
   background: url('./assets/img/bg.svg');
+  background-color: #151515;
 }
 
 body > .bg{

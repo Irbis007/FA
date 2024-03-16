@@ -1,86 +1,69 @@
-<svg width="1920" height="3130" viewBox="0 0 1920 3130" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_70_2139)">
-<rect width="1920" height="3130" fill="#151515"/>
-<line opacity="0.05" x1="72.5005" y1="-6.32952e-08" x2="72.5006" y2="9528" stroke="white"/>
-<line opacity="0.05" x1="146.5" y1="-1.92816e-07" x2="146.501" y2="9528" stroke="white"/>
-<line opacity="0.05" x1="220.5" y1="-1.92816e-07" x2="220.501" y2="9528" stroke="white"/>
-<line opacity="0.05" x1="294.5" y1="-1.92816e-07" x2="294.501" y2="9528" stroke="white"/>
-<line opacity="0.05" x1="368.501" y1="-1.92816e-07" x2="368.501" y2="9528" stroke="white"/>
-<line opacity="0.05" x1="442.501" y1="-1.92816e-07" x2="442.501" y2="9528" stroke="white"/>
-<line opacity="0.05" x1="516.501" y1="-1.92816e-07" x2="516.501" y2="9528" stroke="white"/>
-<line opacity="0.05" x1="590.501" y1="-1.92816e-07" x2="590.501" y2="9528" stroke="white"/>
-<line opacity="0.05" x1="664.501" y1="-1.92816e-07" x2="664.501" y2="9528" stroke="white"/>
-<line opacity="0.05" x1="738.501" y1="-1.92816e-07" x2="738.501" y2="9528" stroke="white"/>
-<line opacity="0.05" x1="812.501" y1="-1.92816e-07" x2="812.501" y2="9528" stroke="white"/>
-<line opacity="0.05" x1="886.501" y1="-1.92816e-07" x2="886.501" y2="9528" stroke="white"/>
-<line opacity="0.05" x1="960.501" y1="-1.92816e-07" x2="960.501" y2="9528" stroke="white"/>
-<line opacity="0.05" x1="1034.5" y1="-1.92816e-07" x2="1034.5" y2="9528" stroke="white"/>
-<line opacity="0.05" x1="1108.5" y1="-1.92816e-07" x2="1108.5" y2="9528" stroke="white"/>
-<line opacity="0.05" x1="1182.5" y1="-1.92816e-07" x2="1182.5" y2="9528" stroke="white"/>
-<line opacity="0.05" x1="1256.5" y1="-1.92816e-07" x2="1256.5" y2="9528" stroke="white"/>
-<line opacity="0.05" x1="1330.5" y1="-1.92816e-07" x2="1330.5" y2="9528" stroke="white"/>
-<line opacity="0.05" x1="1404.5" y1="-1.92816e-07" x2="1404.5" y2="9528" stroke="white"/>
-<line opacity="0.05" x1="1478.5" y1="-1.92816e-07" x2="1478.5" y2="9528" stroke="white"/>
-<line opacity="0.05" x1="1552.5" y1="-1.92816e-07" x2="1552.5" y2="9528" stroke="white"/>
-<line opacity="0.05" x1="1626.5" y1="-1.92816e-07" x2="1626.5" y2="9528" stroke="white"/>
-<line opacity="0.05" x1="1700.5" y1="-1.92816e-07" x2="1700.5" y2="9528" stroke="white"/>
-<line opacity="0.05" x1="1774.5" y1="-1.92816e-07" x2="1774.5" y2="9528" stroke="white"/>
-<line opacity="0.05" x1="1848.5" y1="-1.92816e-07" x2="1848.5" y2="9528" stroke="white"/>
-<line opacity="0.05" x1="1920" y1="22.5" y2="22.5" stroke="white"/>
-<line opacity="0.05" x1="1920" y1="96.5" y2="96.5" stroke="white"/>
-<line opacity="0.05" x1="1920" y1="170.5" y2="170.5" stroke="white"/>
-<line opacity="0.05" x1="1920" y1="244.5" y2="244.5" stroke="white"/>
-<line opacity="0.05" x1="1920" y1="318.5" y2="318.5" stroke="white"/>
-<line opacity="0.05" x1="1920" y1="392.5" y2="392.5" stroke="white"/>
-<line opacity="0.05" x1="1920" y1="466.5" y2="466.5" stroke="white"/>
-<line opacity="0.05" x1="1920" y1="540.5" y2="540.5" stroke="white"/>
-<line opacity="0.05" x1="1920" y1="614.5" y2="614.5" stroke="white"/>
-<line opacity="0.05" x1="1920" y1="688.5" y2="688.5" stroke="white"/>
-<line opacity="0.05" x1="1920" y1="762.5" y2="762.5" stroke="white"/>
-<line opacity="0.05" x1="1920" y1="836.5" y2="836.5" stroke="white"/>
-<line opacity="0.05" x1="1920" y1="910.5" y2="910.5" stroke="white"/>
-<line opacity="0.05" x1="1920" y1="984.5" y2="984.5" stroke="white"/>
-<line opacity="0.05" x1="1920" y1="1058.5" y2="1058.5" stroke="white"/>
-<line opacity="0.05" x1="1920" y1="1132.5" y2="1132.5" stroke="white"/>
-<line opacity="0.05" x1="1920" y1="1206.5" y2="1206.5" stroke="white"/>
-<line opacity="0.05" x1="1920" y1="1280.5" y2="1280.5" stroke="white"/>
-<line opacity="0.05" x1="1920" y1="1354.5" y2="1354.5" stroke="white"/>
-<line opacity="0.05" x1="1920" y1="1428.5" y2="1428.5" stroke="white"/>
-<line opacity="0.05" x1="1920" y1="1502.5" y2="1502.5" stroke="white"/>
-<line opacity="0.05" x1="1920" y1="1576.5" y2="1576.5" stroke="white"/>
-<line opacity="0.05" x1="1920" y1="1650.5" y2="1650.5" stroke="white"/>
-<line opacity="0.05" x1="1920" y1="1724.5" y2="1724.5" stroke="white"/>
-<line opacity="0.05" x1="1920" y1="1798.5" y2="1798.5" stroke="white"/>
-<line opacity="0.05" x1="1920" y1="1872.5" y2="1872.5" stroke="white"/>
-<line opacity="0.05" x1="1920" y1="1946.5" y2="1946.5" stroke="white"/>
-<line opacity="0.05" x1="1920" y1="2020.5" y2="2020.5" stroke="white"/>
-<line opacity="0.05" x1="1920" y1="2094.5" y2="2094.5" stroke="white"/>
-<line opacity="0.05" x1="1920" y1="2168.5" y2="2168.5" stroke="white"/>
-<line opacity="0.05" x1="1920" y1="2242.5" y2="2242.5" stroke="white"/>
-<line opacity="0.05" x1="1920" y1="2316.5" y2="2316.5" stroke="white"/>
-<line opacity="0.05" x1="1920" y1="2390.5" y2="2390.5" stroke="white"/>
-<line opacity="0.05" x1="1920" y1="2464.5" y2="2464.5" stroke="white"/>
-<line opacity="0.05" x1="1920" y1="2538.5" y2="2538.5" stroke="white"/>
-<line opacity="0.05" x1="1920" y1="2612.5" y2="2612.5" stroke="white"/>
-<line opacity="0.05" x1="1920" y1="2686.5" y2="2686.5" stroke="white"/>
-<line opacity="0.05" x1="1920" y1="2760.5" y2="2760.5" stroke="white"/>
-<line opacity="0.05" x1="1920" y1="2834.5" y2="2834.5" stroke="white"/>
-<line opacity="0.05" x1="1920" y1="2908.5" y2="2908.5" stroke="white"/>
-<line opacity="0.05" x1="1920" y1="2982.5" y2="2982.5" stroke="white"/>
-<line opacity="0.05" x1="1920" y1="3056.5" y2="3056.5" stroke="white"/>
-<circle opacity="0.5" cx="870.5" cy="6.5" r="0.5" fill="white"/>
-<g opacity="0.2" filter="url(#filter0_f_70_2139)">
-<circle cx="941.5" cy="15.5" r="3.5" fill="white"/>
-</g>
-</g>
-<defs>
-<filter id="filter0_f_70_2139" x="924" y="-2" width="35" height="35" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feGaussianBlur stdDeviation="7" result="effect1_foregroundBlur_70_2139"/>
-</filter>
-<clipPath id="clip0_70_2139">
-<rect width="1920" height="3130" fill="white"/>
-</clipPath>
-</defs>
+<svg width="1920" height="3110" viewBox="0 0 1920 3110" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line opacity="0.05" x1="72.5005" y1="-20" x2="72.5006" y2="9508" stroke="white"/>
+<line opacity="0.05" x1="146.5" y1="-20" x2="146.501" y2="9508" stroke="white"/>
+<line opacity="0.05" x1="220.5" y1="-20" x2="220.501" y2="9508" stroke="white"/>
+<line opacity="0.05" x1="294.5" y1="-20" x2="294.501" y2="9508" stroke="white"/>
+<line opacity="0.05" x1="368.501" y1="-20" x2="368.501" y2="9508" stroke="white"/>
+<line opacity="0.05" x1="442.501" y1="-20" x2="442.501" y2="9508" stroke="white"/>
+<line opacity="0.05" x1="516.501" y1="-20" x2="516.501" y2="9508" stroke="white"/>
+<line opacity="0.05" x1="590.501" y1="-20" x2="590.501" y2="9508" stroke="white"/>
+<line opacity="0.05" x1="664.501" y1="-20" x2="664.501" y2="9508" stroke="white"/>
+<line opacity="0.05" x1="738.501" y1="-20" x2="738.501" y2="9508" stroke="white"/>
+<line opacity="0.05" x1="812.501" y1="-20" x2="812.501" y2="9508" stroke="white"/>
+<line opacity="0.05" x1="886.501" y1="-20" x2="886.501" y2="9508" stroke="white"/>
+<line opacity="0.05" x1="960.501" y1="-20" x2="960.501" y2="9508" stroke="white"/>
+<line opacity="0.05" x1="1034.5" y1="-20" x2="1034.5" y2="9508" stroke="white"/>
+<line opacity="0.05" x1="1108.5" y1="-20" x2="1108.5" y2="9508" stroke="white"/>
+<line opacity="0.05" x1="1182.5" y1="-20" x2="1182.5" y2="9508" stroke="white"/>
+<line opacity="0.05" x1="1256.5" y1="-20" x2="1256.5" y2="9508" stroke="white"/>
+<line opacity="0.05" x1="1330.5" y1="-20" x2="1330.5" y2="9508" stroke="white"/>
+<line opacity="0.05" x1="1404.5" y1="-20" x2="1404.5" y2="9508" stroke="white"/>
+<line opacity="0.05" x1="1478.5" y1="-20" x2="1478.5" y2="9508" stroke="white"/>
+<line opacity="0.05" x1="1552.5" y1="-20" x2="1552.5" y2="9508" stroke="white"/>
+<line opacity="0.05" x1="1626.5" y1="-20" x2="1626.5" y2="9508" stroke="white"/>
+<line opacity="0.05" x1="1700.5" y1="-20" x2="1700.5" y2="9508" stroke="white"/>
+<line opacity="0.05" x1="1774.5" y1="-20" x2="1774.5" y2="9508" stroke="white"/>
+<line opacity="0.05" x1="1848.5" y1="-20" x2="1848.5" y2="9508" stroke="white"/>
+<line opacity="0.05" x1="1920" y1="2.5" y2="2.5" stroke="white"/>
+<line opacity="0.05" x1="1920" y1="76.5" y2="76.5" stroke="white"/>
+<line opacity="0.05" x1="1920" y1="150.5" y2="150.5" stroke="white"/>
+<line opacity="0.05" x1="1920" y1="224.5" y2="224.5" stroke="white"/>
+<line opacity="0.05" x1="1920" y1="298.5" y2="298.5" stroke="white"/>
+<line opacity="0.05" x1="1920" y1="372.5" y2="372.5" stroke="white"/>
+<line opacity="0.05" x1="1920" y1="446.5" y2="446.5" stroke="white"/>
+<line opacity="0.05" x1="1920" y1="520.5" y2="520.5" stroke="white"/>
+<line opacity="0.05" x1="1920" y1="594.5" y2="594.5" stroke="white"/>
+<line opacity="0.05" x1="1920" y1="668.5" y2="668.5" stroke="white"/>
+<line opacity="0.05" x1="1920" y1="742.5" y2="742.5" stroke="white"/>
+<line opacity="0.05" x1="1920" y1="816.5" y2="816.5" stroke="white"/>
+<line opacity="0.05" x1="1920" y1="890.5" y2="890.5" stroke="white"/>
+<line opacity="0.05" x1="1920" y1="964.5" y2="964.5" stroke="white"/>
+<line opacity="0.05" x1="1920" y1="1038.5" y2="1038.5" stroke="white"/>
+<line opacity="0.05" x1="1920" y1="1112.5" y2="1112.5" stroke="white"/>
+<line opacity="0.05" x1="1920" y1="1186.5" y2="1186.5" stroke="white"/>
+<line opacity="0.05" x1="1920" y1="1260.5" y2="1260.5" stroke="white"/>
+<line opacity="0.05" x1="1920" y1="1334.5" y2="1334.5" stroke="white"/>
+<line opacity="0.05" x1="1920" y1="1408.5" y2="1408.5" stroke="white"/>
+<line opacity="0.05" x1="1920" y1="1482.5" y2="1482.5" stroke="white"/>
+<line opacity="0.05" x1="1920" y1="1556.5" y2="1556.5" stroke="white"/>
+<line opacity="0.05" x1="1920" y1="1630.5" y2="1630.5" stroke="white"/>
+<line opacity="0.05" x1="1920" y1="1704.5" y2="1704.5" stroke="white"/>
+<line opacity="0.05" x1="1920" y1="1778.5" y2="1778.5" stroke="white"/>
+<line opacity="0.05" x1="1920" y1="1852.5" y2="1852.5" stroke="white"/>
+<line opacity="0.05" x1="1920" y1="1926.5" y2="1926.5" stroke="white"/>
+<line opacity="0.05" x1="1920" y1="2000.5" y2="2000.5" stroke="white"/>
+<line opacity="0.05" x1="1920" y1="2074.5" y2="2074.5" stroke="white"/>
+<line opacity="0.05" x1="1920" y1="2148.5" y2="2148.5" stroke="white"/>
+<line opacity="0.05" x1="1920" y1="2222.5" y2="2222.5" stroke="white"/>
+<line opacity="0.05" x1="1920" y1="2296.5" y2="2296.5" stroke="white"/>
+<line opacity="0.05" x1="1920" y1="2370.5" y2="2370.5" stroke="white"/>
+<line opacity="0.05" x1="1920" y1="2444.5" y2="2444.5" stroke="white"/>
+<line opacity="0.05" x1="1920" y1="2518.5" y2="2518.5" stroke="white"/>
+<line opacity="0.05" x1="1920" y1="2592.5" y2="2592.5" stroke="white"/>
+<line opacity="0.05" x1="1920" y1="2666.5" y2="2666.5" stroke="white"/>
+<line opacity="0.05" x1="1920" y1="2740.5" y2="2740.5" stroke="white"/>
+<line opacity="0.05" x1="1920" y1="2814.5" y2="2814.5" stroke="white"/>
+<line opacity="0.05" x1="1920" y1="2888.5" y2="2888.5" stroke="white"/>
+<line opacity="0.05" x1="1920" y1="2962.5" y2="2962.5" stroke="white"/>
+<line opacity="0.05" x1="1920" y1="3036.5" y2="3036.5" stroke="white"/>
 </svg>
