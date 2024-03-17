@@ -74,7 +74,7 @@ licenses.forEach((item) => {
   item.addEventListener("click", () => {
     licensesImg.src = item.children[0].src
     licensesImg.parentElement.classList.add('active')
-    licensesClose.style.left = `calc(50% + ${licensesImg.clientWidth / 2}px - 40px)`
+    licensesClose.style.left = `calc(50% + ${licensesImg.clientWidth / 2}px + 40px)`
   });
 });
 
