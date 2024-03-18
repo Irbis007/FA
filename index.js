@@ -19,8 +19,12 @@ let triggerBlockWrapper = document.querySelector('.benefits__slider')
 let triggerBolckContetn = document.querySelector('.benefits__slider-wrapper')
 
 let scrollPosition = 0;
-let scrollR = triggerBlock.scrollWidth;
+let scrollWidth = 0
+setTimeout(() =>{
+  scrollWidth = window.innerWidth - document.documentElement.clientWidth
+})
 
+let triggerBlockWrapperWidth = triggerBlockWrapper.clientWidth
 
 window.addEventListener("wheel", function (e) {
   let scrollTop = triggerBlock.getBoundingClientRect().y;
@@ -30,13 +34,15 @@ window.addEventListener("wheel", function (e) {
         window.innerHeight / 2 - triggerBlock.clientHeight / 2 + 20 >= scrollTop &&
         !(triggerBlock.scrollWidth - triggerBlock.clientWidth - 40 < triggerBlock.scrollLeft) &&
         scrollTop > 0 &&
-        triggerBlock.scrollLeft + triggerBlockWrapper.clientWidth <triggerBolckContetn.scrollWidth
+        triggerBlock.scrollLeft + triggerBlockWrapper.clientWidth < triggerBolckContetn.scrollWidth
       ) {
         mainContainer.classList.add("unscroll");
+        triggerBlockWrapper.style.width = triggerBlockWrapperWidth + scrollWidth + "px"
         scrollPosition += 15;
         triggerBlock.scrollLeft = scrollPosition;
       } else {
         mainContainer.classList.remove("unscroll");
+        triggerBlockWrapper.style.width = triggerBlockWrapperWidth
       }
     } else if (e.deltaY < 0) {
       if (
@@ -44,10 +50,12 @@ window.addEventListener("wheel", function (e) {
         scrollPosition >= 0
       ) {
         mainContainer.classList.add("unscroll");
+        triggerBlockWrapper.style.width = triggerBlockWrapperWidth + scrollWidth + 'px'
         scrollPosition -= 15;
         triggerBlock.scrollLeft = scrollPosition;
       } else {
         mainContainer.classList.remove("unscroll");
+        triggerBlockWrapper.style.width = triggerBlockWrapperWidth
       }
     }
   }
