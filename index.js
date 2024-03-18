@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', () =>{
 
 
 const faqs = document.querySelectorAll(".faq .faq__body .item");
@@ -19,9 +20,10 @@ let triggerBolckContetn = document.querySelector('.benefits__slider-wrapper')
 
 let scrollPosition = 0;
 let scrollR = triggerBlock.scrollWidth;
+
+
 window.addEventListener("wheel", function (e) {
   let scrollTop = triggerBlock.getBoundingClientRect().y;
-
   if (triggerBlock && window.innerWidth > 991) {
     if (e.deltaY > 0) {
       if (
@@ -42,7 +44,6 @@ window.addEventListener("wheel", function (e) {
         scrollPosition >= 0
       ) {
         mainContainer.classList.add("unscroll");
-
         scrollPosition -= 15;
         triggerBlock.scrollLeft = scrollPosition;
       } else {
@@ -114,3 +115,9 @@ window.addEventListener("scroll", () => {
   scrollAnimation();
 });
 
+document.addEventListener('scroll', (event) => {
+  event.preventDefault();
+});
+
+
+})

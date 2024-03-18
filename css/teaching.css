@@ -71,7 +71,7 @@ main .teaching::after{
   position: absolute;
   inset: 2px;
   border-radius: inherit;
-  background: linear-gradient(108deg,#13131368 68%, #292929, #1e1e1e, #131313);
+  background: linear-gradient(108deg,#13131300 68%, #292929, #1e1e1e, #131313);
   z-index: 10;
 }
 
