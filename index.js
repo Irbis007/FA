@@ -42,7 +42,7 @@ window.addEventListener("wheel", function (e) {
         triggerBlock.scrollLeft = scrollPosition;
       } else {
         mainContainer.classList.remove("unscroll");
-        triggerBlockWrapper.style.width = triggerBlockWrapperWidth
+        triggerBlockWrapper.style.width = triggerBlockWrapperWidth + 'px'
       }
     } else if (e.deltaY < 0) {
       if (
@@ -55,7 +55,7 @@ window.addEventListener("wheel", function (e) {
         triggerBlock.scrollLeft = scrollPosition;
       } else {
         mainContainer.classList.remove("unscroll");
-        triggerBlockWrapper.style.width = triggerBlockWrapperWidth
+        triggerBlockWrapper.style.width = triggerBlockWrapperWidth + 'px'
       }
     }
   }
