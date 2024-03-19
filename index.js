@@ -32,9 +32,9 @@ window.addEventListener("wheel", function (e) {
     if (e.deltaY > 0) {
       if (
         window.innerHeight / 2 - triggerBlock.clientHeight / 2 + 20 >= scrollTop &&
-        !(triggerBlock.scrollWidth - triggerBlock.clientWidth - 40 < triggerBlock.scrollLeft) &&
+        !(triggerBlock.scrollWidth - triggerBlock.clientWidth   < triggerBlock.scrollLeft) &&
         scrollTop > 0 &&
-        triggerBlock.scrollLeft + triggerBlockWrapper.clientWidth < triggerBolckContetn.scrollWidth
+        triggerBlock.scrollLeft + triggerBlockWrapper.clientWidth + 40 < triggerBolckContetn.scrollWidth + 100
       ) {
         mainContainer.classList.add("unscroll");
         triggerBlockWrapper.style.width = triggerBlockWrapperWidth + scrollWidth + "px"

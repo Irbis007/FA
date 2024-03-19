@@ -108,10 +108,7 @@ main .benefits::after{
 
 @media (max-width: 1200px) {
   .benefits .benefits__slider {
-    top: 50%;
-    transform: translateY(-50%);
-    width: 52%;
-    padding: 130px 50px;
+    padding: 130px 0;
   }
 }
 
