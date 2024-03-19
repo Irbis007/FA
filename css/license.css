@@ -1,16 +1,16 @@
 
 
 main .license{
-  padding-top: 88px;
+  padding-top: 180px;
 }
 
 .license::before{
   content: '[Лицензии]';
-  top: 70px;
+  top: 160px;
 }
 
 .license::after{
-  top: 50px;
+  top: 110px;
   left: 150px;
 }
 
