@@ -73,7 +73,6 @@ main .intro::before {
 
   width: calc(48px + (88 - 48) * ((100vw - 1366px) / (1920 - 1366)));
   max-width: 88px;
-  min-width: 48px;
   padding: 32px 0;
 
   background: linear-gradient(#151515, #151515) padding-box,
@@ -121,6 +120,10 @@ main .intro::before {
   .intro .intro__title{
     font-size: 9rem;
   }
+
+  .intro .intro__content{
+    margin-top: 130px;
+  }
 }
 
 
@@ -162,7 +165,7 @@ main .intro::before {
   }
   .intro .intro__content {
     padding-left: 60px;
-    margin-top: -100px;
+    margin-top: -90px;
   }
   .intro .intro__content .content__button {
     margin-top: 46px;
@@ -194,6 +197,9 @@ main .intro::before {
     text-align: center;
   }
   .intro .intro__content .content__button {
+    display: block;
+    margin: 0 auto;
     margin-top: 27px;
+    max-width: 320px;
   }
 }
