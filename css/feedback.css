@@ -5,7 +5,7 @@
 
 .feedback::before {
   content: "[Отзывы]";
-  top: 170px;
+  top: 195px;
 }
 
 .feedback .container {
@@ -39,6 +39,8 @@
 
 .feedback .swiper-slide {
   width: calc(33% - 12px);
+
+  min-width: 539px;
   padding: 48px;
   background: linear-gradient(rgba(30, 30, 30, 1), rgba(35, 35, 35, 1), rgba(38, 38, 38, 1))
       padding-box,
@@ -120,6 +122,8 @@
   .feedback .container{
     width: 100%;
     margin-left: 6.5%;
+  }
+  .feedback .swiper-slide{
   }
 }
 
