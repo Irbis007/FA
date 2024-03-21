@@ -129,7 +129,19 @@
     margin: 0 auto;
   }
   .results .col-4 {
-    margin-top: -218px;
+    margin-top: -186px;
+  }
+}
+
+@media (max-width: 1522px) {
+  .results .col-4 {
+    margin-top: -217px;
+  }
+}
+
+@media (max-width: 1378px) {
+  .results .col-4 {
+    margin-top: -244px;
   }
 }
 @media (max-width: 1312px) {
@@ -142,6 +154,12 @@
   }
   .results .col-3 {
     margin-top: -83px;
+  }
+}
+
+@media (max-width: 1378px) {
+  .results .col-3 {
+    margin-top: -55px;
   }
 }
 
