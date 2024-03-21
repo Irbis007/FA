@@ -9,8 +9,8 @@
 
 .products__tab {
   position: relative;
-  width: 750px;
-  height: 750px;
+  width: 46.5%;
+  aspect-ratio: 1/1;
   margin-top: 246px;
   background: linear-gradient(rgba(30, 30, 30, 1), rgba(35, 35, 35, 1), rgba(38, 38, 38, 1))
       padding-box,
@@ -114,17 +114,17 @@
 .products__tab .list .item:nth-child(1) .item__top {
   top: 47px;
   left: 284px;
-  width: 370px;
+  right: 13.5%;
 }
 
 .products__tab .list .item:nth-child(2) .item__top {
   top: 479px;
   left: 18px;
-  right: 468px;
+  right: 63%;
 }
 .products__tab .list .item:nth-child(3) .item__top {
-  top: 530px;
-  left: 532px;
+  top: 70%;
+  left: 71%;
   width: 263px;
 }
 
@@ -227,10 +227,10 @@
   .products__tab .list .item .item__body {
     left: calc(100% + 20px);
   }
-  .products__tab {
+  /* .products__tab {
     width: 550px;
     height: 550px;
-  }
+  } */
   .products__tab::after {
     width: 400px;
     height: 400px;
