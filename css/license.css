@@ -106,8 +106,9 @@ main .license{
   display: flex;
   margin: 0 auto;
   margin-top: 5vh;
-  height: 90vh;
+  max-height: 90vh;
   width: auto;
+  max-width: 85vw;
 }
 
 @media (max-width: 767px) {
@@ -167,13 +168,17 @@ main .license{
 }
 
 
-
-
 @media (max-width: 991px) {
   .license .container{
     width: 100%;
   }
   .license .license__title{
     text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .license .overview .close{
+    top: 4px;
   }
 }

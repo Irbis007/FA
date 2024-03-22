@@ -180,9 +180,12 @@ main .teaching::after{
   .anim__desctop{
     display: block;
   }
+  .teaching .item{
+    background: linear-gradient(160deg,#131313 70%, #292929, #1e1e1e, #131313);
+  }
   .teaching .item__gradient{
     display: block;
-    background: linear-gradient(96deg,#13131300 90%, #292929, #1e1e1e, #131313);
+    background: linear-gradient(160deg,#13131300 70%, #292929, #1e1e1e, #131313);
   }
   .teaching{
     margin-top: 60px;

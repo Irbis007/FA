@@ -122,7 +122,7 @@ main .intro::before {
   }
 
   .intro .intro__content{
-    margin-top: 130px;
+    margin-top: -130px;
   }
 }
 

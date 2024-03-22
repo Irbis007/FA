@@ -4,6 +4,12 @@
   padding: 141px 0 84px;
 }
 
+
+.footer .container{
+  position: relative;
+  z-index: 10;
+}
+
 .footer__circle {
   content: "";
   position: absolute;

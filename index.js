@@ -83,7 +83,11 @@ licenses.forEach((item) => {
   item.addEventListener("click", () => {
     licensesImg.src = item.children[0].src
     licensesImg.parentElement.classList.add('active')
-    licensesClose.style.left = `calc(50% + ${licensesImg.clientWidth / 2}px + 40px)`
+    if(window.innerWidth > 767){
+      licensesClose.style.left = `calc(50% + ${licensesImg.clientWidth / 2}px + 40px)`
+    } else{
+      licensesClose.style.left = `calc(50% + ${licensesImg.clientWidth / 2}px + 1px)`
+    }
   });
 });
 
