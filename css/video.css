@@ -377,6 +377,10 @@
   .video:after {
     left: 50%;
   }
+  .video__wrapper{
+    border-width: 4px;
+    border-radius: 12px 12px 0 0 ;
+  }
   .video .button__aside {
     margin-top: 18px;
   }

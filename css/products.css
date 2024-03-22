@@ -406,4 +406,10 @@
     max-width: 294px;
     padding: 0;
   }
+  .products__tab .item__top.active .item__icon{
+    scale: 1;
+  }
+  .products__tab .list .item .item__body .item__body-descr{
+    width: 100%;
+  }
 }

@@ -136,6 +136,7 @@
   .feedback .container {
     padding: 0 12px;
     width: 100%;
+    margin: 0;
   }
   .feedback .feedback__title {
     font-size: 3.7rem;
@@ -155,6 +156,11 @@
   }
   .feedback .swiper-slide {
     min-width: 100%;
+  }
+  .feedback .feedback__title{
+    font-size: 2.25rem;
+    padding: 0;
+    text-align: center;
   }
   .feedback .slide__top .top__title {
     font-size: 2.2rem;

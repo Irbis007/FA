@@ -115,6 +115,10 @@ main .teaching::after{
   transition: all .6s, scale 1s .6s;
 }
 
+.anim__tablet{
+  display: none;
+}
+
 @media (max-width: 1100px) {
   .teaching .list {
     flex-direction: column;
@@ -158,11 +162,33 @@ main .teaching::after{
   main .teaching::after{
     top: -90px;
   }
+  .teaching .container{
+    width: 100%;
+  }
+  .anim__tablet{
+    display: block;
+  }
+  .anim__desctop{
+    display: none;
+  }
 }
 
 @media (max-width: 767px) {
+  .anim__tablet{
+    display: none;
+  }
+  .anim__desctop{
+    display: block;
+  }
+  .teaching .item__gradient{
+    display: block;
+    background: linear-gradient(96deg,#13131300 90%, #292929, #1e1e1e, #131313);
+  }
   .teaching{
     margin-top: 60px;
+  }
+  .teaching .item__bg{
+    inset: 2px;
   }
   main .teaching::after{
     top: -70px;
@@ -171,9 +197,9 @@ main .teaching::after{
     top: -40px;
   }
   .teaching .item__bg {
-    width: 100%;
     right: unset;
     bottom: unset;
+    inset: 2px;
   }
   .teaching .item__bg lottie-player{
     width: 100%;

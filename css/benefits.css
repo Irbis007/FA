@@ -175,6 +175,9 @@ main .benefits::after{
 }
 
 @media (max-width: 767px) {
+  .benefits{
+    padding-top: 75px;
+  }
   .benefits .container {
     grid-template-columns: 1fr;
   }
@@ -185,17 +188,19 @@ main .benefits::after{
   .benefits .benefits__title-small {
     grid-column: 2/3;
     grid-row: 1/2;
-    font-size: 1.9rem;
+    font-size: 2.15rem;
     height: max-content;
     margin-top: 5px;
   }
   .benefits .benefits__title-yellow {
     grid-column: 1/2;
     grid-row: 1/3;
+    font-size: 7.75rem;
   }
   .benefits .benefits__title-normal {
     grid-column: 2/3;
     grid-row: 2/3;
+    font-size: 4.3rem;
   }
   .benefits .benefits__button-wrapper {
     margin-top: 12px;
