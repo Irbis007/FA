@@ -164,6 +164,7 @@ main .benefits::after{
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     gap: 12px;
+    transform: translate(0);
   }
   .benefits .benefits__slider .benefits__slider-slide {
     width: 100%;
