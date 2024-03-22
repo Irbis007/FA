@@ -16,8 +16,10 @@
 @import url("./css/footer.css");
 
 body {
-  background: url('./assets/img/bg.svg');
+  background: url('./assets/img/bg-big.svg');
   background-color: #151515;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body > .bg{
@@ -53,10 +55,19 @@ body > .bg img{
   }
 }
 
+@media (max-width: 991px) {
+  body {
+    background-image: url('./assets/img/bg-mid.svg');
+  }
+}
+
 
 @media (max-width: 767px) {
   html{
     font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (768 - 320)));
+  }
+  body {
+    background-image: url('./assets/img/bg-min.svg');
   }
 }
 
