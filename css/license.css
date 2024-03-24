@@ -9,10 +9,6 @@ main .license{
   top: 160px;
 }
 
-.license::after{
-  top: 110px;
-  left: 150px;
-}
 
 
 .license .container{

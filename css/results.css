@@ -8,9 +8,6 @@
   top: 134px;
 }
 
-.results::after {
-  top: 71px;
-}
 
 .results .container {
   max-width: 1736px;
@@ -169,9 +166,6 @@
   }
   .results::before {
     top: 50px;
-  }
-  .results::after {
-    top: 30px;
   }
   .results .grid__item {
     width: 100%;

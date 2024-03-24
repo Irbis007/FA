@@ -3,9 +3,7 @@
   content: '[Продукты]';
 }
 
-.products::after{
-  top: -116px;
-}
+
 
 .products__tab {
   position: relative;
@@ -263,9 +261,6 @@
   .products::before{
     top: 146px;
   }
-  .products::after{
-    top: 129px;
-  }
   .products .container{
     padding-top: 330px;
   }
@@ -344,9 +339,6 @@
 }
 
 @media (max-width: 767px) {
-  .products::after{
-    top: 20px;
-  }
   .products::before{
     top: 44px;
   }

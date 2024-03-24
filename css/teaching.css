@@ -4,9 +4,7 @@ main .teaching::before{
   top: -48px;
 }
 
-main .teaching::after{
-  top: -111px;
-}
+
 
 .teaching {
   color: #fff;
@@ -159,9 +157,6 @@ main .teaching::after{
 }
 
 @media (max-width: 991px) {
-  main .teaching::after{
-    top: -90px;
-  }
   .teaching .container{
     width: 100%;
   }
@@ -192,9 +187,6 @@ main .teaching::after{
   }
   .teaching .item__bg{
     inset: 2px;
-  }
-  main .teaching::after{
-    top: -70px;
   }
   main .teaching::before{
     top: -40px;

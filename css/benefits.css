@@ -3,10 +3,6 @@ main .benefits::before {
   content: "[Преимущества]";
 }
 
-main .benefits::after{
-  top: 0;
-}
-
 .benefits {
   position: relative;
   margin-top: 74px;
