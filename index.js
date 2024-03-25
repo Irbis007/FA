@@ -28,7 +28,7 @@ let triggerBlockWrapperWidth = triggerBlockWrapper.clientWidth
 
 
 window.addEventListener("wheel", function (e) {
-  console.log(triggerBlockWrapperWidth)
+  console.log(triggerBlockWrapperWidth, scrollWidth)
   let scrollTop = triggerBlock.getBoundingClientRect().y;
   if (triggerBlock && window.innerWidth > 991) {
     if (e.deltaY > 0) {
