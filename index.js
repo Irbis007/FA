@@ -26,7 +26,9 @@ setTimeout(() =>{
 
 let triggerBlockWrapperWidth = triggerBlockWrapper.clientWidth
 
+
 window.addEventListener("wheel", function (e) {
+  console.log(triggerBlockWrapperWidth)
   let scrollTop = triggerBlock.getBoundingClientRect().y;
   if (triggerBlock && window.innerWidth > 991) {
     if (e.deltaY > 0) {

@@ -9,7 +9,7 @@
 }
 
 .feedback .container {
-  width: 87%;
+  width: 1670px;
   padding: 0;
 }
 
@@ -118,7 +118,7 @@
   line-height: 120%;
 }
 
-@media (max-width: 1366px) {
+@media (max-width: 1670px) {
   .feedback .container{
     width: 100%;
     margin-left: 6.5%;
