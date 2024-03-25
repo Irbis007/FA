@@ -280,6 +280,10 @@ footer::before {
   z-index: 100;
 }
 
+.preloader img{
+  width: 100%;
+}
+
 .intro__aside {
   transform: translateX(-30%);
   opacity: 0;
