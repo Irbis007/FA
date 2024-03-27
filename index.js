@@ -3,9 +3,12 @@ document.addEventListener('DOMContentLoaded', () =>{
 
 const faqs = document.querySelectorAll(".faq .faq__body .item");
 
+const blockHeght = document.querySelector('.block__height')
+
 faqs.forEach((item) => {
   item.addEventListener("click", () => {
     if (!item.classList.contains("active")) {
+      removeActive(faqs)
       item.classList.add("active");
     } else {
       item.classList.remove("active");
@@ -28,7 +31,6 @@ let triggerBlockWrapperWidth = triggerBlockWrapper.clientWidth
 
 
 window.addEventListener("wheel", function (e) {
-  console.log(triggerBlockWrapperWidth, scrollWidth)
   let scrollTop = triggerBlock.getBoundingClientRect().y;
   if (triggerBlock && window.innerWidth > 991) {
     if (e.deltaY > 0) {
@@ -105,7 +107,6 @@ function removeActive(list) {
 }
 
 const scrollItems = document.querySelectorAll(".scroll-item");
-const scrollGroup = document.querySelectorAll('.scroll-group');
 
 
 
