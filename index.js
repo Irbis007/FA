@@ -2,8 +2,8 @@ document.addEventListener('DOMContentLoaded', () =>{
 
 
 const faqs = document.querySelectorAll(".faq .faq__body .item");
+const intro = document.querySelector('.intro')
 
-const blockHeght = document.querySelector('.block__height')
 
 faqs.forEach((item) => {
   item.addEventListener("click", () => {

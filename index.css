@@ -21,7 +21,7 @@ body {
   background-image: url('./assets/img/bg-big.svg');
   background-color: #151515;
   background-repeat: repeat-y;
-  background-size: cover;
+  background-size: 100%;
 }
 
 body > .bg{
