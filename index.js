@@ -17,53 +17,53 @@ faqs.forEach((item) => {
 });
 
 let mainContainer = document.querySelector("body");
-let triggerBlock = document.querySelector(".benefits__slider-target");
-let triggerBlockWrapper = document.querySelector('.benefits__slider')
-let triggerBolckContetn = document.querySelector('.benefits__slider-wrapper')
+// let triggerBlock = document.querySelector(".benefits__slider-target");
+// let triggerBlockWrapper = document.querySelector('.benefits__slider')
+// let triggerBolckContetn = document.querySelector('.benefits__slider-wrapper')
 
-let scrollPosition = 0;
-let scrollWidth = 0
-setTimeout(() =>{
-  scrollWidth = window.innerWidth - document.documentElement.clientWidth
-})
+// let scrollPosition = 0;
+// let scrollWidth = 0
+// setTimeout(() =>{
+//   scrollWidth = window.innerWidth - document.documentElement.clientWidth
+// })
 
-let triggerBlockWrapperWidth = triggerBlockWrapper.clientWidth
+// let triggerBlockWrapperWidth = triggerBlockWrapper.clientWidth
 
 
-window.addEventListener("wheel", function (e) {
-  let scrollTop = triggerBlock.getBoundingClientRect().y;
-  if (triggerBlock && window.innerWidth > 991) {
-    if (e.deltaY > 0) {
-      if (
-        window.innerHeight / 2 - triggerBlock.clientHeight / 2 + 20 >= scrollTop &&
-        !(triggerBlock.scrollWidth - triggerBlock.clientWidth   < triggerBlock.scrollLeft) &&
-        scrollTop > 0 &&
-        triggerBlock.scrollLeft + triggerBlockWrapper.clientWidth + 40 < triggerBolckContetn.scrollWidth + 100
-      ) {
-        mainContainer.classList.add("unscroll");
-        triggerBlockWrapper.style.width = triggerBlockWrapperWidth + scrollWidth + "px"
-        scrollPosition += 15;
-        triggerBlock.scrollLeft = scrollPosition;
-      } else {
-        mainContainer.classList.remove("unscroll");
-        triggerBlockWrapper.style.width = triggerBlockWrapperWidth + 'px'
-      }
-    } else if (e.deltaY < 0) {
-      if (
-        window.innerHeight / 2 - triggerBlock.clientHeight / 2 - 20 <= scrollTop &&
-        scrollPosition >= 0
-      ) {
-        mainContainer.classList.add("unscroll");
-        triggerBlockWrapper.style.width = triggerBlockWrapperWidth + scrollWidth + 'px'
-        scrollPosition -= 15;
-        triggerBlock.scrollLeft = scrollPosition;
-      } else {
-        mainContainer.classList.remove("unscroll");
-        triggerBlockWrapper.style.width = triggerBlockWrapperWidth + 'px'
-      }
-    }
-  }
-});
+// window.addEventListener("wheel", function (e) {
+//   let scrollTop = triggerBlock.getBoundingClientRect().y;
+//   if (triggerBlock && window.innerWidth > 991) {
+//     if (e.deltaY > 0) {
+//       if (
+//         window.innerHeight / 2 - triggerBlock.clientHeight / 2 + 20 >= scrollTop &&
+//         !(triggerBlock.scrollWidth - triggerBlock.clientWidth   < triggerBlock.scrollLeft) &&
+//         scrollTop > 0 &&
+//         triggerBlock.scrollLeft + triggerBlockWrapper.clientWidth + 40 < triggerBolckContetn.scrollWidth + 100
+//       ) {
+//         mainContainer.classList.add("unscroll");
+//         triggerBlockWrapper.style.width = triggerBlockWrapperWidth + scrollWidth + "px"
+//         scrollPosition += 15;
+//         triggerBlock.scrollLeft = scrollPosition;
+//       } else {
+//         mainContainer.classList.remove("unscroll");
+//         triggerBlockWrapper.style.width = triggerBlockWrapperWidth + 'px'
+//       }
+//     } else if (e.deltaY < 0) {
+//       if (
+//         window.innerHeight / 2 - triggerBlock.clientHeight / 2 - 20 <= scrollTop &&
+//         scrollPosition >= 0
+//       ) {
+//         mainContainer.classList.add("unscroll");
+//         triggerBlockWrapper.style.width = triggerBlockWrapperWidth + scrollWidth + 'px'
+//         scrollPosition -= 15;
+//         triggerBlock.scrollLeft = scrollPosition;
+//       } else {
+//         mainContainer.classList.remove("unscroll");
+//         triggerBlockWrapper.style.width = triggerBlockWrapperWidth + 'px'
+//       }
+//     }
+//   }
+// });
 
 
 
